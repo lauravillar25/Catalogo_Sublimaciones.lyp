@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyP Sublimaciones - Catálogo Exclusivo</title>
+    <meta name="description" content="Catálogo de productos personalizados de LyP Sublimaciones. Tazas, regalos y más.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="LyP Sublimaciones Logo" class="logo-img">
+            <span class="brand-name">Sublimaciones.lyp_ctes</span>
+        </div>
+        <!-- Optional Navigation could go here -->
+    </header>
+
+    <section class="hero">
+        <h1>Regalos personalizados que hablan por vos.</h1>
+        <p>Personaliza cada producto a tu manera.</p>
+    </section>
+
+    <nav class="category-nav">
+        <div class="container">
+            <div id="category-index" class="category-index">
+                <!-- Links will be injected by script.js -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="product-grid">
+            <!-- Products will be loaded here by script.js -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="shipping-info">
+            <p><i class="fas fa-map-marker-alt"></i> Corrientes Capital</p>
+            <p class="shipping-highlight"><i class="fas fa-motorcycle"></i> Contamos con Envíos</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/sublimaciones.lyp_ctes/" target="_blank" class="social-btn instagram"
+                title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-btn facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- WhatsApp link in footer to chat generally, not specific product -->
+            <a href="https://wa.me/5493794020786" target="_blank" class="social-btn whatsapp" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="footer-text">&copy; 2024 Sublimaciones.lyp Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Image Modal (Lightbox) -->
+    <div id="image-modal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Vista ampliada del diseño">
+    </div>
+
+    <!-- Data & Script -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Grain Filter Overlay -->
+    <svg style="display:none;">
+        <filter id="grainy">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+            <feColorMatrix type="saturate" values="0" />
+        </filter>
+    </svg>
+</body>
+
+</html>
