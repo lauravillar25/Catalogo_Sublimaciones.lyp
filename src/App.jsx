@@ -27,7 +27,7 @@ function App() {
       <header className="header">
         <div className="nav-container">
           <div className="logo-container">
-            <img src="/assets/logo.png" alt="Logo" className="logo-img" />
+            <img src="assets/logo.png" alt="Logo" className="logo-img" />
             <span className="brand-name">Sublimaciones.lyp</span>
           </div>
         </div>
