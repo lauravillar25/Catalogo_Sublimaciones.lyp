@@ -5,20 +5,28 @@ const ProductCard = ({ product, onImageClick }) => {
     const defaultImage = 'assets/logo.png';
     const [currentImg, setCurrentImg] = useState(product?.image || defaultImage);
     const [isHovered, setIsHovered] = useState(false);
+    const [isInView, setIsInView] = useState(false);
+    const [imgLoading, setImgLoading] = useState(true);
 
     useEffect(() => {
         let interval;
-        if (isHovered && product?.images && Array.isArray(product.images) && product.images.length > 1) {
+        // Se activa el carrusel si hay hover (PC) O si está a la vista (Móvil)
+        const shouldRotate = (isHovered || isInView) &&
+            product?.images &&
+            Array.isArray(product.images) &&
+            product.images.length > 1;
+
+        if (shouldRotate) {
             let idx = 0;
             interval = setInterval(() => {
                 idx = (idx + 1) % product.images.length;
                 setCurrentImg(product.images[idx]);
-            }, 1000);
+            }, 2000); // Un poco más lento para que sea menos frenético en móvil
         } else {
             setCurrentImg(product?.image || defaultImage);
         }
         return () => clearInterval(interval);
-    }, [isHovered, product?.images, product?.image]);
+    }, [isHovered, isInView, product?.images, product?.image]);
 
     if (!product) return null;
 
@@ -38,8 +46,10 @@ const ProductCard = ({ product, onImageClick }) => {
             className={`product-card ${product.isPromo ? 'is-promo' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            onViewportEnter={() => setIsInView(true)}
+            onViewportLeave={() => setIsInView(false)}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+            viewport={{ amount: 0.5 }} // Se activa cuando se ve al menos el 50%
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -48,15 +58,18 @@ const ProductCard = ({ product, onImageClick }) => {
                     <i className="fas fa-tag"></i> PROMO
                 </div>
             )}
-            <div className="card-image" onClick={() => onImageClick(currentImg)}>
+            <div className={`card-image ${imgLoading ? 'is-loading' : ''}`} onClick={() => onImageClick(currentImg)}>
                 <motion.img
                     src={currentImg}
                     alt={product.title}
                     className="product-img"
+                    loading="lazy"
                     whileHover={{ scale: 1.08 }}
+                    onLoad={() => setImgLoading(false)}
                     onError={(e) => {
                         e.target.onerror = null;
                         e.target.src = defaultImage;
+                        setImgLoading(false);
                     }}
                 />
             </div>
