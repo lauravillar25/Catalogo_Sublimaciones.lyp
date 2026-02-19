@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const ProductCard = ({ product, onImageClick }) => {
-    const defaultImage = '/assets/logo.png';
+    const defaultImage = 'assets/logo.png';
     const [currentImg, setCurrentImg] = useState(product?.image || defaultImage);
     const [isHovered, setIsHovered] = useState(false);
 
