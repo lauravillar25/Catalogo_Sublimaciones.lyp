@@ -9,7 +9,8 @@ import WhatsAppBubble from './components/WhatsAppBubble';
 import './index.css';
 
 function App() {
-  const [selectedImg, setSelectedImg] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   // Group products by category
   const categories = products.reduce((acc, product) => {
@@ -26,12 +27,23 @@ function App() {
       <Noise />
       <header className="header">
         <div className="nav-container">
-          <div className="logo-container">
-            <img src="assets/logo.png" alt="Logo" className="logo-img" />
-            <span className="brand-name">Sublimaciones.lyp</span>
-          </div>
+          <a href="#" className="logo-link" onClick={() => setIsNavOpen(false)}>
+            <div className="logo-container">
+              <img src="assets/logo.png" alt="Logo" className="logo-img" />
+              <span className="brand-name">Sublimaciones.lyp</span>
+            </div>
+          </a>
         </div>
       </header>
+
+      <button
+        className="mobile-nav-toggle"
+        onClick={() => setIsNavOpen(!isNavOpen)}
+        aria-label="Toggle navigation"
+      >
+        <i className={`fas ${isNavOpen ? 'fa-times' : 'fa-bars'}`}></i>
+        <span>Categorías</span>
+      </button>
 
       <section className="hero">
         <motion.h1
@@ -51,12 +63,19 @@ function App() {
         </motion.p>
       </section>
 
-      <nav className="category-nav">
+      <nav className={`category-nav ${isNavOpen ? 'is-open' : ''}`}>
         <div className="category-index">
           {categoryList.map(cat => (
-            <a key={cat} href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`} className="category-link">
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              key={cat}
+              href={`#${cat.toLowerCase().replace(/\s+/g, '-')}`}
+              className="category-link"
+              onClick={() => setIsNavOpen(false)}
+            >
               {cat}
-            </a>
+            </motion.a>
           ))}
         </div>
       </nav>
@@ -64,22 +83,22 @@ function App() {
       <main className="container">
         {categoryList.map(categoryName => {
           const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-');
-          const isPromo = categoryName === "PROMO";
+          const isPromo = categoryName === "COMBOS ¡OFERTAS!";
 
           return (
             <React.Fragment key={categoryName}>
               {/* Inject Gallery BEFORE "Polímeros Varios" */}
               {categoryName === "Polímeros Varios" && (
-                <WorkReel images={galleryImages} onImageClick={setSelectedImg} />
+                <WorkReel images={galleryImages} onImageClick={(img) => setSelectedProduct({ image: img, title: 'Galería', isGallery: true })} />
               )}
 
               <div id={categoryId} className={`category-header ${isPromo ? 'promo-header' : ''}`}>
-                <h2>{categoryName} {isPromo && <span>¡OFERTA!</span>}</h2>
+                <h2>{categoryName}</h2>
               </div>
 
               <div className="product-grid">
                 {categories[categoryName].map(product => (
-                  <ProductCard key={product.id} product={product} onImageClick={setSelectedImg} />
+                  <ProductCard key={product.id} product={product} onProductClick={setSelectedProduct} />
                 ))}
               </div>
             </React.Fragment>
@@ -106,9 +125,9 @@ function App() {
 
       <WhatsAppBubble phoneNumber={whatsappNumber} />
       <ImageModal
-        isOpen={!!selectedImg}
-        src={selectedImg}
-        onClose={() => setSelectedImg(null)}
+        isOpen={!!selectedProduct}
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
       />
     </div>
   );

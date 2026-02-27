@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const ProductCard = ({ product, onImageClick }) => {
+const ProductCard = ({ product, onProductClick }) => {
     const defaultImage = 'assets/logo.png';
     const [currentImg, setCurrentImg] = useState(product?.image || defaultImage);
     const [isHovered, setIsHovered] = useState(false);
@@ -52,13 +52,15 @@ const ProductCard = ({ product, onImageClick }) => {
             viewport={{ amount: 0.5 }} // Se activa cuando se ve al menos el 50%
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={() => onProductClick(product)}
+            style={{ cursor: 'pointer' }}
         >
             {product.isPromo && (
                 <div className="promo-badge">
                     <i className="fas fa-tag"></i> PROMO
                 </div>
             )}
-            <div className={`card-image ${imgLoading ? 'is-loading' : ''}`} onClick={() => onImageClick(currentImg)}>
+            <div className={`card-image ${imgLoading ? 'is-loading' : ''}`}>
                 <motion.img
                     src={currentImg}
                     alt={product.title}
@@ -75,11 +77,10 @@ const ProductCard = ({ product, onImageClick }) => {
             </div>
             <div className="card-content">
                 <h3 className="title">{product.title || 'Producto'}</h3>
-                <p className="description" dangerouslySetInnerHTML={{ __html: product.description || '' }} />
                 <div className="price">{formatPrice(product.price)}</div>
-                <a href={waLink} target="_blank" rel="noopener noreferrer" className="btn-consultar">
+                <button className="btn-consultar" onClick={(e) => { e.stopPropagation(); window.open(waLink, '_blank'); }}>
                     Consultar <i className="fab fa-whatsapp"></i>
-                </a>
+                </button>
             </div>
         </motion.div>
     );

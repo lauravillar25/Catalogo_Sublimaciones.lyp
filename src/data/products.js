@@ -1,15 +1,15 @@
 export const products = [
-    // Category: PROMO (New Category)
+    // Category: COMBOS ¡OFERTAS!
     {
         id: 1000,
         title: "Combo Completo - Set de Jardín",
         description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero irrompible y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
         price: 15000,
-        image: "assets/promos/combo_completo/combo_completo_jardin.png.png",
+        image: "assets/promos/combo_completo/combo_completo_jardin.png",
         images: [
-            "assets/promos/combo_completo/combo_completo_jardin.png.png"
+            "assets/promos/combo_completo/combo_completo_jardin.png"
         ],
-        category: "PROMO",
+        category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
     {
@@ -23,7 +23,7 @@ export const products = [
             "assets/promos/combo_simple/D_NQ_NP_2X_618523-MLA92271902142_092025-F.webp",
             "assets/promos/combo_simple/combo_jardin_1.jpg"
         ],
-        category: "PROMO",
+        category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
     {
@@ -31,13 +31,39 @@ export const products = [
         title: "Promo 2 Tazas de Cerámica",
         description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li><li><span class=\"promo-highlight\">Promo especial: 2 tazas x $11.500</span></li></ul>",
         price: 11500,
-        image: "assets/promos/promo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
+        image: "assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
         images: [
-            "assets/promos/promo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
-            "assets/promos/promo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg",
-            "assets/promos/promo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg"
+            "assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
+            "assets/promos/combo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg",
+            "assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg"
         ],
-        category: "PROMO",
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1003,
+        title: "Combo Botella + Taza Personalizada",
+        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
+        price: 15000,
+        image: "assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
+        images: [
+            "assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1004,
+        title: "Combo Set de Asado",
+        description: "El regalo perfecto para los amantes del asado. <ul><li>Incluye: Tabla de madera + Cuchillo y Tenedor + Funda personalizada</li><li>Material: Madera de alta calidad y acero inoxidable</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
+        price: 10000,
+        image: "assets/promos/asado_main.jpg",
+        images: [
+            "assets/promos/asado_main.jpg",
+            "assets/promos/asado_1.jpg",
+            "assets/promos/asado_2.jpg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
     // Category: Tazas de Cerámica (Requested to be first)
@@ -183,7 +209,8 @@ export const products = [
         images: [
             "assets/botellitas/hoppy_alu_1.jpg",
             "assets/botellitas/hoppy_alu_2.jpg",
-            "assets/botellitas/hoppy_alu_3.jpg"
+            "assets/botellitas/hoppy_alu_3.jpg",
+            "assets/botellitas/hoppy_alu_4.jpg"
         ],
         category: "Botellitas"
     },
@@ -198,7 +225,8 @@ export const products = [
             "assets/jarros-polimero/jarro_2.jpg",
             "assets/jarros-polimero/jarro_3.jpg",
             "assets/jarros-polimero/jarro_4.jpg",
-            "assets/jarros-polimero/jarro_5.jpg"
+            "assets/jarros-polimero/jarro_5.jpg",
+            "assets/jarros-polimero/jarros_6.jpg"
         ],
         category: "Jarros de Polímero"
     },
@@ -227,7 +255,8 @@ export const products = [
             "assets/cantimploras/cantimplora_2.jpg",
             "assets/cantimploras/cantimplora_3.jpg",
             "assets/cantimploras/cantimplora_4.jpg",
-            "assets/cantimploras/cantimplora_5.jpg"
+            "assets/cantimploras/cantimplora_5.jpg",
+            "assets/cantimploras/cantimplora_6.webp"
         ],
         category: "Jarros de Polímero"
     },
@@ -308,7 +337,8 @@ export const products = [
         images: [
             "assets/llaveros/llavero_destapador_1.jpg",
             "assets/llaveros/llavero_destapador_2.jpg",
-            "assets/llaveros/llavero_destapador_3.jpg"
+            "assets/llaveros/llavero_destapador_3.jpg",
+            "assets/llaveros/llavero_destapador_4.jpg"
         ],
         category: "Llaveros",
         isPromo: true
@@ -336,7 +366,29 @@ export const galleryImages = [
     'assets/gallery/work_2.jpg',
     'assets/gallery/work_3.jpg',
     'assets/gallery/work_4.jpg',
-    'assets/gallery/work_5.jpg'
+    'assets/gallery/work_5.jpg',
+    'assets/gallery/20230811_164036.jpg',
+    'assets/gallery/329840161_1190699441634569_4016815056354967411_n.jpg',
+    'assets/gallery/487016607_9388556617918480_4890384538005480370_n.jpg',
+    'assets/gallery/487191878_9388556561251819_6839682983711695490_n.jpg',
+    'assets/gallery/487205781_9388556727918469_4867086631559263037_n.jpg',
+    'assets/gallery/4969826037277592497.jpg',
+    'assets/gallery/e8ba13a07600472979f29b7eaa2eacfc.jpg',
+    'assets/gallery/IMG_0393.jpg',
+    'assets/gallery/IMG_6359.jpg',
+    'assets/gallery/IMG_6728.jpg',
+    'assets/gallery/IMG_7042.jpg',
+    'assets/gallery/IMG_7043.jpg',
+    'assets/gallery/IMG_8559.jpg',
+    'assets/gallery/photo1687223028_2.jpeg',
+    'assets/gallery/photo1687223383.jpeg',
+    'assets/gallery/photo1687225512.jpeg',
+    'assets/gallery/photo1687225512_1.jpeg',
+    'assets/gallery/photo1716387483.jpeg',
+    'assets/gallery/Screenshot_20230617_112028_Facebook.jpg',
+    'assets/gallery/Screenshot_20230617_112035_Facebook.jpg',
+    'assets/gallery/Screenshot_20230617_112040_Facebook.jpg',
+    'assets/gallery/WhatsApp_Image_2024-06-10_at_12.47.18_1.jpeg'
 ];
 
 export const whatsappNumber = "5493794020786";
