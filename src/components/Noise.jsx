@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 const Noise = ({
     patternSize = 250,
@@ -8,11 +8,16 @@ const Noise = ({
     patternAlpha = 15, // intensity
 }) => {
     const canvasRef = useRef(null);
+    // No renderizar en móvil: el loop de canvas drena CPU y batería
+    const [isMobile] = useState(() => window.matchMedia('(max-width: 768px)').matches);
 
     useEffect(() => {
+        if (isMobile) return; // Salir sin hacer nada en móvil
+
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         let frame = 0;
+        let animId;
 
         const patternCanvas = document.createElement('canvas');
         patternCanvas.width = patternSize;
@@ -47,7 +52,7 @@ const Noise = ({
                 draw();
             }
             frame++;
-            window.requestAnimationFrame(loop);
+            animId = window.requestAnimationFrame(loop);
         };
 
         const handleResize = () => {
@@ -59,8 +64,14 @@ const Noise = ({
         handleResize();
         loop();
 
-        return () => window.removeEventListener('resize', handleResize);
-    }, [patternSize, patternScaleX, patternScaleY, patternRefreshInterval, patternAlpha]);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            cancelAnimationFrame(animId);
+        };
+    }, [isMobile, patternSize, patternScaleX, patternScaleY, patternRefreshInterval, patternAlpha]);
+
+    // En móvil no montar el canvas en absoluto
+    if (isMobile) return null;
 
     return (
         <canvas

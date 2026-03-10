@@ -3,11 +3,13 @@ export const products = [
     {
         id: 1000,
         title: "Combo Completo - Set de Jardín",
-        description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero irrompible y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
-        price: 15000,
-        image: "assets/promos/combo_completo/combo_completo_jardin.png",
+        description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero irrompible y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $16.300</span></li></ul>",
+        price: 16300,
+        image: "/assets/promos/combo_completo/combo_completo_jardin.png",
         images: [
-            "assets/promos/combo_completo/combo_completo_jardin.png"
+            "/assets/promos/combo_completo/combo_completo_jardin.png",
+            "/assets/promos/combo_completo/combo_completo_jardin2.jpeg",
+            "/assets/promos/combo_completo/combo_jardin_1.jpg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -15,13 +17,69 @@ export const products = [
     {
         id: 1001,
         title: "Combo Simple - Set de Jardín",
-        description: "Combo esencial para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita</li><li>Material: Polímero y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
-        price: 10000,
-        image: "assets/promos/combo_simple/22w15_A54-2.png",
+        description: "Combo esencial para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita</li><li>Material: Polímero y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $12.000</span></li></ul>",
+        price: 12000,
+        image: "/assets/promos/combo_simple/22w15_A54-2.png",
         images: [
-            "assets/promos/combo_simple/22w15_A54-2.png",
-            "assets/promos/combo_simple/D_NQ_NP_2X_618523-MLA92271902142_092025-F.webp",
-            "assets/promos/combo_simple/combo_jardin_1.jpg"
+            "/assets/promos/combo_simple/22w15_A54-2.png",
+            "/assets/promos/combo_simple/D_NQ_NP_2X_618523-MLA92271902142_092025-F.webp",
+            "/assets/promos/combo_simple/D_NQ_NP_852262-MLA53230431562_012023-O.webp",
+            "/assets/promos/combo_simple/D_NQ_NP_860979-MLA77520505935_072024-O.webp",
+            "/assets/promos/combo_simple/combo_jardin_1.jpg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1005,
+        title: "Combo Taza + Curarita de Polímero",
+        description: "Set plástico irrompible ideal para los más chicos. <ul><li>Incluye: Taza de polímero + Cucharita (Curarita) de polímero</li><li>Material: Polímero sublimable de alta calidad</li><li><span class=\"promo-highlight\">Precio especial: $5.000</span></li></ul>",
+        price: 5000,
+        image: "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-06 at 13.49.58.jpeg",
+        images: [
+            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-06 at 13.49.58.jpeg",
+            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-09 at 21.46.28 (2).jpeg",
+            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-09 at 21.46.28 (3).jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1006,
+        title: "Set 3 Piezas - Jardín",
+        description: "Set esencial para el nivel inicial. <ul><li>Incluye: Toalla de mano + Servilleta + Individual</li><li>Material: Tela sublimable de alta calidad, resistente a lavados</li><li><span class=\"promo-highlight\">Precio especial: $8.700</span></li></ul>",
+        price: 8700,
+        image: "/assets/promos/set_3_piezas/WhatsApp Image 2026-03-06 at 13.49.57 (1).jpeg",
+        images: [
+            "/assets/promos/set_3_piezas/WhatsApp Image 2026-03-06 at 13.49.57 (1).jpeg",
+            "/assets/promos/set_3_piezas/D_NQ_NP_752636-MLA48771770671_012022-O.webp",
+            "/assets/promos/set_3_piezas/D_NQ_NP_854717-MLA103556402201_012026-O.webp"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1007,
+        title: "Combo Escritorio – “Tu espacio con café y estilo”",
+        description: "Set ideal para el trabajo o estudio. <ul><li>Incluye: Taza de cerámica importada + Pad mouse personalizado</li><li>Material: Cerámica y tela</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
+        price: 10000,
+        image: "/assets/promos/combo_escritorio/846312c8c8e11a7b45f5b2c12c606f9c.jpg",
+        images: [
+            "/assets/promos/combo_escritorio/846312c8c8e11a7b45f5b2c12c606f9c.jpg",
+            "/assets/promos/combo_escritorio/c9c175aa4b0c82c502c12e9a5c1f7da7.jpg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1003,
+        title: "Combo Dúo Perfecto – “Tu día completo en dos sorbos”",
+        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
+        price: 15000,
+        image: "/assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
+        images: [
+            "/assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
+            "/assets/promos/combo_botellita+ taza_personalizada/0f474d80056c104c0d9a96bf27c07094.jpg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -31,37 +89,66 @@ export const products = [
         title: "Promo 2 Tazas de Cerámica",
         description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li><li><span class=\"promo-highlight\">Promo especial: 2 tazas x $11.500</span></li></ul>",
         price: 11500,
-        image: "assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
+        image: "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
         images: [
-            "assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
-            "assets/promos/combo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg",
-            "assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1003,
-        title: "Combo Botella + Taza Personalizada",
-        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
-        price: 15000,
-        image: "assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
-        images: [
-            "assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg"
+            "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
+            "/assets/promos/combo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg",
+            "/assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
     {
         id: 1004,
-        title: "Combo Set de Asado",
-        description: "El regalo perfecto para los amantes del asado. <ul><li>Incluye: Tabla de madera + Cuchillo y Tenedor + Funda personalizada</li><li>Material: Madera de alta calidad y acero inoxidable</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
+        title: "Set de Asado",
+        description: "El regalo perfecto para los amantes del asado. <ul><li>Incluye: Tabla de madera + Funda personalizada</li><li>Material: Madera de alta calidad</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
         price: 10000,
-        image: "assets/promos/asado_main.jpg",
+        image: "/assets/promos/set de asado/1.jpeg",
         images: [
-            "assets/promos/asado_main.jpg",
-            "assets/promos/asado_1.jpg",
-            "assets/promos/asado_2.jpg"
+            "/assets/promos/set de asado/1.jpeg",
+            "/assets/promos/set de asado/asado_1.jpg",
+            "/assets/promos/set de asado/asado_2.jpg",
+            "/assets/promos/set de asado/WhatsApp Image 2026-03-09 at 21.20.25 (1).jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1008,
+        title: "Combo Ritual – porque cada pieza representa un ritual: café, mate, cerveza.",
+        description: "Porque cada pieza representa un ritual: café, mate, cerveza. <ul><li>Incluye: Choop de polímero + Mate de polímero + Taza de cerámica</li><li>Material: Polímero irrompible y cerámica importada</li><li><span class=\"promo-highlight\">Precio especial: $16.000</span></li></ul>",
+        price: 16000,
+        image: "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14.jpeg",
+        images: [
+            "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14.jpeg",
+            "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14 (1).jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1010,
+        title: "Combo Asador – “El kit que nunca falla”",
+        description: "Todo lo necesario para un asado completo. <ul><li>Incluye: Set de asado (tabla y funda) + Choop de polímero + Destapador de polímero</li><li>Material: Madera, polímero</li><li><span class=\"promo-highlight\">Precio especial: $16.000</span></li></ul>",
+        price: 16000,
+        image: "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31.jpeg",
+        images: [
+            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31.jpeg",
+            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31 (1).jpeg",
+            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31 (2).jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1009,
+        title: "Combo Versátil – “Para cada momento, tu compañero ideal”",
+        description: "Versatilidad en tus bebidas. <ul><li>Incluye: Taza de cerámica + Choop de polímero</li><li>Material: Cerámica importada y polímero resistente</li><li><span class=\"promo-highlight\">Precio especial: $10.900</span></li></ul>",
+        price: 10900,
+        image: "/assets/promos/combo_versatil/1.jpeg",
+        images: [
+            "/assets/promos/combo_versatil/1.jpeg",
+            "/assets/promos/combo_versatil/2.jpeg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -72,13 +159,13 @@ export const products = [
         title: "Taza de Cerámica Blanca - Diseños Varios",
         description: "Taza de cerámica clásica, excelente calidad y brillo. Diseños de Stitch, Día de la Madre y más personalizables. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 6000,
-        image: "assets/taza_stitch.jpg",
+        image: "/assets/taza_de_ceramica_blanca/taza_stitch.jpg",
         images: [
-            "assets/taza_stitch.jpg",
-            "assets/taza_stitch_carga.jpg",
-            "assets/taza_mama_1.jpg",
-            "assets/taza_mama_2.jpg",
-            "assets/taza_mama_3.jpg"
+            "/assets/taza_de_ceramica_blanca/taza_stitch.jpg",
+            "/assets/taza_de_ceramica_blanca/taza_stitch_carga.jpg",
+            "/assets/taza_de_ceramica_blanca/taza_mama_1.jpg",
+            "/assets/taza_de_ceramica_blanca/taza_mama_2.jpg",
+            "/assets/taza_de_ceramica_blanca/taza_mama_3.jpg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -87,13 +174,13 @@ export const products = [
         title: "Tazas con Cuchara - Diseños Personalizados",
         description: "Hermosas tazas de cerámica con interior y asa de color. Incluye cuchara haciendo juego. <ul><li>Consultar colores disponibles</li><li>Medidas: 9cm</li><li>Capacidad: 330ml</li></ul>",
         price: 9000,
-        image: "assets/taza_curarita.png",
+        image: "/assets/taza_con_curarita/taza_curarita.png",
         images: [
-            "assets/taza_curarita.png",
-            "assets/taza_dbz.jpg",
-            "assets/taza_bts.jpg",
-            "assets/taza_boca.jpg",
-            "assets/taza_simpsons.jpg"
+            "/assets/taza_con_curarita/taza_curarita.png",
+            "/assets/taza_interior_color/taza_dbz.jpg",
+            "/assets/taza_con_curarita/taza_bts.jpg",
+            "/assets/taza_con_curarita/taza_boca.jpg",
+            "/assets/taza_con_curarita/taza_simpsons.jpg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -102,13 +189,13 @@ export const products = [
         title: "Tazas Interior Color - Personajes",
         description: "Tazas de cerámica con asa e interior de color. Diseños de Mario Bros, Chicas Superpoderosas, Disney y más. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 8000,
-        image: "assets/tazas_colores_grupo.png",
+        image: "/assets/taza_interior_color/tazas_colores_grupo.png",
         images: [
-            "assets/tazas_colores_grupo.png",
-            "assets/taza_powerpuff.jpg",
-            "assets/taza_mario.jpg",
-            "assets/taza_bella_bestia.jpg",
-            "assets/taza_huevo.jpg"
+            "/assets/taza_interior_color/tazas_colores_grupo.png",
+            "/assets/taza_interior_color/taza_powerpuff.jpg",
+            "/assets/taza_interior_color/taza_mario.jpg",
+            "/assets/taza_interior_color/taza_bella_bestia.jpg",
+            "/assets/taza_interior_color/taza_huevo.jpg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -117,13 +204,13 @@ export const products = [
         title: "Taza Mágica - Cambia con el Calor",
         description: "¡Sorprende con esta taza! A temperatura ambiente es negra, pero al agregar líquido caliente revela la imagen oculta. Ideal para regalos sorpresa. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 9000,
-        image: "assets/taza_magica_main.png",
+        image: "/assets/taza_magica/taza_magica_main.png",
         images: [
-            "assets/taza_magica_main.png",
-            "assets/taza_magica_caliente.jpg",
-            "assets/taza_magica_frio.jpg",
-            "assets/taza_magica_up.jpg",
-            "assets/taza_magica_simpsons.jpg"
+            "/assets/taza_magica/taza_magica_main.png",
+            "/assets/taza_magica/taza_magica_caliente.jpg",
+            "/assets/taza_magica/taza_magica_frio.jpg",
+            "/assets/taza_magica/taza_magica_up.jpg",
+            "/assets/taza_magica/taza_magica_simpsons.jpg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -132,11 +219,11 @@ export const products = [
         title: "Taza con Asa de Corazón",
         description: "El regalo más romántico. Tazas de cerámica con asa en forma de corazón e interior de color. Perfectas para San Valentín y aniversarios. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 8800,
-        image: "assets/taza_corazon_mickey.jpg",
+        image: "/assets/taza_con_asa_de_corazon/taza_corazon_mickey.jpg",
         images: [
-            "assets/taza_corazon_mickey.jpg",
-            "assets/taza_corazon_grupo.jpg",
-            "assets/taza_corazon_diseños.jpg"
+            "/assets/taza_con_asa_de_corazon/taza_corazon_mickey.jpg",
+            "/assets/taza_con_asa_de_corazon/taza_corazon_grupo.jpg",
+            "/assets/taza_con_asa_de_corazon/taza_corazon_diseños.jpg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -145,9 +232,9 @@ export const products = [
         title: "Taza Pastel Mate",
         description: "Elegancia y suavidad. Tazas con acabado mate en hermosos tonos pastel (Rosa, Lila, Verde, Celeste). Tacto suave y diseño moderno. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 8600,
-        image: "assets/taza_pastel.png",
+        image: "/assets/taza_pastel_mate/taza_pastel.png",
         images: [
-            "assets/taza_pastel.png"
+            "/assets/taza_pastel_mate/taza_pastel.png"
         ],
         category: "Tazas de Cerámica"
     },
@@ -156,10 +243,10 @@ export const products = [
         title: "Taza Ventana Negra",
         description: "<ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 8000,
-        image: "assets/taza_ventana_negra_1.jpg",
+        image: "/assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
         images: [
-            "assets/taza_ventana_negra_1.jpg",
-            "assets/taza_ventana_negra_2.png"
+            "/assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
+            "/assets/taza_ventana_negra/taza_ventana_negra_2.png"
         ],
         category: "Tazas de Cerámica"
     },
@@ -168,9 +255,9 @@ export const products = [
         title: "Taza Base Hilo - Interior y Asa Color",
         description: "Hermosa taza con base texturizada. <ul><li>Consultar colores disponibles</li><li>Medidas: 10cm</li></ul>",
         price: 9000,
-        image: "assets/taza_base_hilo.png",
+        image: "/assets/taza_base_hilo/taza_base_hilo.png",
         images: [
-            "assets/taza_base_hilo.png"
+            "/assets/taza_base_hilo/taza_base_hilo.png"
         ],
         category: "Tazas de Cerámica"
     },
@@ -179,9 +266,9 @@ export const products = [
         title: "Taza Mágica con Interior de Color",
         description: "<ul><li>Consultar colores disponibles</li><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 9500,
-        image: "assets/taza_magica_color.png",
+        image: "/assets/taza_magica_color/taza_magica_color.png",
         images: [
-            "assets/taza_magica_color.png"
+            "/assets/taza_magica_color/taza_magica_color.png"
         ],
         category: "Tazas de Cerámica"
     },
@@ -190,13 +277,13 @@ export const products = [
         title: "Hoppy Deportivo Personalizado",
         description: "Ideal para el colegio o deporte, personalizables con nombre y personaje favorito. <ul><li>Modelo: Hoppy Deportivo</li><li>Capacidad: 500 ml</li><li>Material: Polímero Sublimable</li><li>Mantiene: Frío 6hs / Caliente 2hs</li></ul>",
         price: 9000,
-        image: "assets/botellitas/hoppy_roblox.jpg",
+        image: "/assets/botellitas/hoppy_roblox.jpg",
         images: [
-            "assets/botellitas/hoppy_roblox.jpg",
-            "assets/botellitas/hoppy_messi.jpg",
-            "assets/botellitas/hoppy_frozen.jpg",
-            "assets/botellitas/hoppy_dragon.jpg",
-            "assets/botellitas/hoppy_nombre.jpg"
+            "/assets/botellitas/hoppy_roblox.jpg",
+            "/assets/botellitas/hoppy_messi.jpg",
+            "/assets/botellitas/hoppy_frozen.jpg",
+            "/assets/botellitas/hoppy_dragon.jpg",
+            "/assets/botellitas/hoppy_nombre.jpg"
         ],
         category: "Botellitas"
     },
@@ -205,12 +292,12 @@ export const products = [
         title: "Hoppy Deportivo 600ml Aluminio",
         description: "Botella de aluminio de alta calidad, incluye doble pico para mayor comodidad. <ul><li>Modelo: Hoppy Aluminio Blanco</li><li>Capacidad: 600 ml</li><li>Material: Aluminio Sublimable</li><li>Incluye: Doble pico</li></ul>",
         price: 12000,
-        image: "assets/botellitas/hoppy_alu_1.jpg",
+        image: "/assets/botellitas/hoppy_alu_1.jpg",
         images: [
-            "assets/botellitas/hoppy_alu_1.jpg",
-            "assets/botellitas/hoppy_alu_2.jpg",
-            "assets/botellitas/hoppy_alu_3.jpg",
-            "assets/botellitas/hoppy_alu_4.jpg"
+            "/assets/botellitas/hoppy_alu_1.jpg",
+            "/assets/botellitas/hoppy_alu_2.jpg",
+            "/assets/botellitas/hoppy_alu_3.jpg",
+            "/assets/botellitas/hoppy_alu_4.jpg"
         ],
         category: "Botellitas"
     },
@@ -219,14 +306,14 @@ export const products = [
         title: "Jarro Chopp de Polímero",
         description: "Jarro estilo Chopp, irrompible y brillante. Ideal para regalar. <ul><li>Material: Plástico Polímero</li><li>Capacidad: 590 mL</li><li>Medidas: 17cm alto x 8cm diámetro</li><li>Apto Microondas: Sí</li></ul>",
         price: 7500,
-        image: "assets/jarros-polimero/jarro_1.jpg",
+        image: "/assets/jarros-polimero/jarro_1.jpg",
         images: [
-            "assets/jarros-polimero/jarro_1.jpg",
-            "assets/jarros-polimero/jarro_2.jpg",
-            "assets/jarros-polimero/jarro_3.jpg",
-            "assets/jarros-polimero/jarro_4.jpg",
-            "assets/jarros-polimero/jarro_5.jpg",
-            "assets/jarros-polimero/jarros_6.jpg"
+            "/assets/jarros-polimero/jarro_1.jpg",
+            "/assets/jarros-polimero/jarro_2.jpg",
+            "/assets/jarros-polimero/jarro_3.jpg",
+            "/assets/jarros-polimero/jarro_4.jpg",
+            "/assets/jarros-polimero/jarro_5.jpg",
+            "/assets/jarros-polimero/jarros_6.jpg"
         ],
         category: "Jarros de Polímero"
     },
@@ -235,12 +322,12 @@ export const products = [
         title: "Jarro Térmico de Café 450ml",
         description: "Jarro con asa, ideal para la oficina o el auto. <ul><li>Capacidad: 450 mL</li><li>Altura: 24 cm</li><li>Material: Polímero/Plástico</li><li>Precio: $7000</li></ul>",
         price: 7000,
-        image: "assets/jarros-cafe/jarro_cafe_1.jpg",
+        image: "/assets/jarros-cafe/jarro_cafe_1.jpg",
         images: [
-            "assets/jarros-cafe/jarro_cafe_1.jpg",
-            "assets/jarros-cafe/jarro_cafe_2.jpg",
-            "assets/jarros-cafe/jarro_cafe_3.jpg",
-            "assets/jarros-cafe/jarro_cafe_4.jpg"
+            "/assets/jarros-cafe/jarro_cafe_1.jpg",
+            "/assets/jarros-cafe/jarro_cafe_2.jpg",
+            "/assets/jarros-cafe/jarro_cafe_3.jpg",
+            "/assets/jarros-cafe/jarro_cafe_4.jpg"
         ],
         category: "Jarros de Polímero"
     },
@@ -249,14 +336,14 @@ export const products = [
         title: "Jarro Tipo Cantimplora",
         description: "Práctico jarro tipo cantimplora, ideal para los más chicos. <ul><li>Capacidad: 400 mL</li><li>Colores tapa: Rosa, Celeste, Verde</li><li>Precio: $5000</li></ul>",
         price: 5000,
-        image: "assets/cantimploras/cantimplora_1.png",
+        image: "/assets/cantimploras/cantimplora_1.png",
         images: [
-            "assets/cantimploras/cantimplora_1.png",
-            "assets/cantimploras/cantimplora_2.jpg",
-            "assets/cantimploras/cantimplora_3.jpg",
-            "assets/cantimploras/cantimplora_4.jpg",
-            "assets/cantimploras/cantimplora_5.jpg",
-            "assets/cantimploras/cantimplora_6.webp"
+            "/assets/cantimploras/cantimplora_1.png",
+            "/assets/cantimploras/cantimplora_2.jpg",
+            "/assets/cantimploras/cantimplora_3.jpg",
+            "/assets/cantimploras/cantimplora_4.jpg",
+            "/assets/cantimploras/cantimplora_5.jpg",
+            "/assets/cantimploras/cantimplora_6.webp"
         ],
         category: "Jarros de Polímero"
     },
@@ -265,13 +352,13 @@ export const products = [
         title: "Taza de Polímero",
         description: "Taza de polímero (plástico) irrompible. Ideal para niños y jardines. <ul><li>Medidas: 8.5cm de alto x 8cm de diámetro</li><li>Material: Polímero Sublimable</li><li>Precio: $3000</li><li>Apto Microondas: Sí</li></ul>",
         price: 3000,
-        image: "assets/polimero-varios/taza_polimero_1.jpg",
+        image: "/assets/polimero-varios/taza_polimero_1.jpg",
         images: [
-            "assets/polimero-varios/taza_polimero_1.jpg",
-            "assets/polimero-varios/taza_polimero_2.jpg",
-            "assets/polimero-varios/taza_polimero_3.jpg",
-            "assets/polimero-varios/taza_polimero_4.jpg",
-            "assets/polimero-varios/taza_polimero_5.jpg"
+            "/assets/polimero-varios/taza_polimero_1.jpg",
+            "/assets/polimero-varios/taza_polimero_2.jpg",
+            "/assets/polimero-varios/taza_polimero_3.jpg",
+            "/assets/polimero-varios/taza_polimero_4.jpg",
+            "/assets/polimero-varios/taza_polimero_5.jpg"
         ],
         category: "Polímeros Varios"
     },
@@ -280,11 +367,11 @@ export const products = [
         title: "Vaso de Café 200cc",
         description: "Vaso pequeño, ideal para café o cortado. <ul><li>Capacidad: 200 mL</li><li>Medidas: 9cm alto x 8cm diámetro</li><li>Precio: $4600</li></ul>",
         price: 4600,
-        image: "assets/polimero-varios/vaso_cafe_1.jpg",
+        image: "/assets/polimero-varios/vaso_cafe_1.jpg",
         images: [
-            "assets/polimero-varios/vaso_cafe_1.jpg",
-            "assets/polimero-varios/vaso_cafe_2.jpg",
-            "assets/polimero-varios/vaso_cafe_3.jpg"
+            "/assets/polimero-varios/vaso_cafe_1.jpg",
+            "/assets/polimero-varios/vaso_cafe_2.jpg",
+            "/assets/polimero-varios/vaso_cafe_3.jpg"
         ],
         category: "Polímeros Varios"
     },
@@ -293,12 +380,12 @@ export const products = [
         title: "Vaso / Lapicero",
         description: "Vaso multiuso, ideal como lapicero o vaso de bebida. <ul><li>Capacidad: 450 cc</li><li>Medidas: 9cm alto x 8cm diámetro</li><li>Precio: $3200</li></ul>",
         price: 3200,
-        image: "assets/polimero-varios/vaso_lapicero_1.jpg",
+        image: "/assets/polimero-varios/vaso_lapicero_1.jpg",
         images: [
-            "assets/polimero-varios/vaso_lapicero_1.jpg",
-            "assets/polimero-varios/vaso_lapicero_2.jpg",
-            "assets/polimero-varios/vaso_lapicero_3.jpg",
-            "assets/polimero-varios/vaso_lapicero_4.jpg"
+            "/assets/polimero-varios/vaso_lapicero_1.jpg",
+            "/assets/polimero-varios/vaso_lapicero_2.jpg",
+            "/assets/polimero-varios/vaso_lapicero_3.jpg",
+            "/assets/polimero-varios/vaso_lapicero_4.jpg"
         ],
         category: "Polímeros Varios"
     },
@@ -307,10 +394,10 @@ export const products = [
         title: "Mate de Polímero",
         description: "Mate de polímero resistente, ideal para personalizar. <ul><li>Medidas: 10.5cm alto x 8cm diámetro</li><li>Capacidad: 300 ml</li><li>Precio: $4200</li></ul>",
         price: 4200,
-        image: "assets/polimero-varios/mate_polimero_1.jpg",
+        image: "/assets/polimero-varios/mate_polimero_1.jpg",
         images: [
-            "assets/polimero-varios/mate_polimero_1.jpg",
-            "assets/polimero-varios/mate_polimero_2.jpg"
+            "/assets/polimero-varios/mate_polimero_1.jpg",
+            "/assets/polimero-varios/mate_polimero_2.jpg"
         ],
         category: "Polímeros Varios"
     },
@@ -319,11 +406,11 @@ export const products = [
         title: "Llavero Cinta Corto Colgante",
         description: "Llavero de cinta con argolla y mosquetón. <ul><li>Medidas: 2cm x 18cm aprox</li><li>Incluye: Argolla y mosquetón</li><li>Precio unidad: $2500</li><li><span class=\"promo-highlight\">Promo x 10: $14000</span></li></ul>",
         price: 2500,
-        image: "assets/llaveros/llavero_cinta_1.jpg",
+        image: "/assets/llaveros/llavero_cinta_1.jpg",
         images: [
-            "assets/llaveros/llavero_cinta_1.jpg",
-            "assets/llaveros/llavero_cinta_2.jpg",
-            "assets/llaveros/llavero_cinta_3.jpg"
+            "/assets/llaveros/llavero_cinta_1.jpg",
+            "/assets/llaveros/llavero_cinta_2.jpg",
+            "/assets/llaveros/llavero_cinta_3.jpg"
         ],
         category: "Llaveros",
         isPromo: true
@@ -333,12 +420,12 @@ export const products = [
         title: "Llavero Destapador",
         description: "Práctico llavero con función de destapador incorporada. <ul><li>Medidas: 7cm alto x 4.6cm ancho aprox</li><li>Material: Polímero / Metal</li><li>Precio unidad: $2500</li><li><span class=\"promo-highlight\">Promo x 12: $18000</span></li></ul>",
         price: 2500,
-        image: "assets/llaveros/llavero_destapador_1.jpg",
+        image: "/assets/llaveros/llavero_destapador_1.jpg",
         images: [
-            "assets/llaveros/llavero_destapador_1.jpg",
-            "assets/llaveros/llavero_destapador_2.jpg",
-            "assets/llaveros/llavero_destapador_3.jpg",
-            "assets/llaveros/llavero_destapador_4.jpg"
+            "/assets/llaveros/llavero_destapador_1.jpg",
+            "/assets/llaveros/llavero_destapador_2.jpg",
+            "/assets/llaveros/llavero_destapador_3.jpg",
+            "/assets/llaveros/llavero_destapador_4.jpg"
         ],
         category: "Llaveros",
         isPromo: true
@@ -348,13 +435,13 @@ export const products = [
         title: "Llaveros de Polímero - Varias Formas",
         description: "Llaveros de polímero resistentes y brillantes. Personalizables con el diseño que prefieras. <ul><li>Formas disponibles: Cuadrado, Redondo, Corazón</li><li>Material: Polímero Sublimable</li><li>Precio unidad: $1500</li><li><span class=\"promo-highlight\">Promo x 12: $12400</span></li></ul>",
         price: 1500,
-        image: "assets/llaveros/llavero_polimero_cuadrado.jpg",
+        image: "/assets/llaveros/llavero_polimero_cuadrado.jpg",
         images: [
-            "assets/llaveros/llavero_polimero_cuadrado.jpg",
-            "assets/llaveros/llavero_polimero_redondo.jpg",
-            "assets/llaveros/llavero_polimero_rectangulo.jpg",
-            "assets/llaveros/llavero_polimero_corazon_1.jpg",
-            "assets/llaveros/llavero_polimero_corazon_2.jpg"
+            "/assets/llaveros/llavero_polimero_cuadrado.jpg",
+            "/assets/llaveros/llavero_polimero_redondo.jpg",
+            "/assets/llaveros/llavero_polimero_rectangulo.jpg",
+            "/assets/llaveros/llavero_polimero_corazon_1.jpg",
+            "/assets/llaveros/llavero_polimero_corazon_2.jpg"
         ],
         category: "Llaveros",
         isPromo: true
@@ -362,33 +449,38 @@ export const products = [
 ];
 
 export const galleryImages = [
-    'assets/gallery/work_1.jpg',
-    'assets/gallery/work_2.jpg',
-    'assets/gallery/work_3.jpg',
-    'assets/gallery/work_4.jpg',
-    'assets/gallery/work_5.jpg',
-    'assets/gallery/20230811_164036.jpg',
-    'assets/gallery/329840161_1190699441634569_4016815056354967411_n.jpg',
-    'assets/gallery/487016607_9388556617918480_4890384538005480370_n.jpg',
-    'assets/gallery/487191878_9388556561251819_6839682983711695490_n.jpg',
-    'assets/gallery/487205781_9388556727918469_4867086631559263037_n.jpg',
-    'assets/gallery/4969826037277592497.jpg',
-    'assets/gallery/e8ba13a07600472979f29b7eaa2eacfc.jpg',
-    'assets/gallery/IMG_0393.jpg',
-    'assets/gallery/IMG_6359.jpg',
-    'assets/gallery/IMG_6728.jpg',
-    'assets/gallery/IMG_7042.jpg',
-    'assets/gallery/IMG_7043.jpg',
-    'assets/gallery/IMG_8559.jpg',
-    'assets/gallery/photo1687223028_2.jpeg',
-    'assets/gallery/photo1687223383.jpeg',
-    'assets/gallery/photo1687225512.jpeg',
-    'assets/gallery/photo1687225512_1.jpeg',
-    'assets/gallery/photo1716387483.jpeg',
-    'assets/gallery/Screenshot_20230617_112028_Facebook.jpg',
-    'assets/gallery/Screenshot_20230617_112035_Facebook.jpg',
-    'assets/gallery/Screenshot_20230617_112040_Facebook.jpg',
-    'assets/gallery/WhatsApp_Image_2024-06-10_at_12.47.18_1.jpeg'
+    '/assets/gallery/work_1.jpg',
+    '/assets/gallery/work_2.jpg',
+    '/assets/gallery/work_3.jpg',
+    '/assets/gallery/work_4.jpg',
+    '/assets/gallery/work_5.jpg',
+    '/assets/gallery/20230811_164036.jpg',
+    '/assets/gallery/329840161_1190699441634569_4016815056354967411_n.jpg',
+    '/assets/gallery/487016607_9388556617918480_4890384538005480370_n.jpg',
+    '/assets/gallery/487191878_9388556561251819_6839682983711695490_n.jpg',
+    '/assets/gallery/487205781_9388556727918469_4867086631559263037_n.jpg',
+    '/assets/gallery/4969826037277592497.jpg',
+    '/assets/gallery/e8ba13a07600472979f29b7eaa2eacfc.jpg',
+    '/assets/gallery/IMG_0393.jpg',
+    '/assets/gallery/IMG_6359.jpg',
+    '/assets/gallery/IMG_6728.jpg',
+    '/assets/gallery/IMG_7042.jpg',
+    '/assets/gallery/IMG_7043.jpg',
+    '/assets/gallery/IMG_8559.jpg',
+    '/assets/gallery/photo1687223028_2.jpeg',
+    '/assets/gallery/photo1687223383.jpeg',
+    '/assets/gallery/photo1687225512.jpeg',
+    '/assets/gallery/photo1687225512_1.jpeg',
+    '/assets/gallery/photo1716387483.jpeg',
+    '/assets/gallery/Screenshot_20230617_112028_Facebook.jpg',
+    '/assets/gallery/Screenshot_20230617_112035_Facebook.jpg',
+    '/assets/gallery/Screenshot_20230617_112040_Facebook.jpg',
+    '/assets/gallery/WhatsApp_Image_2024-06-10_at_12.47.18_1.jpeg',
+    '/assets/gallery/IMG_0074.HEIC',
+    '/assets/gallery/IMG_9127.HEIC',
+    '/assets/gallery/IMG_9941.HEIC',
+    '/assets/gallery/IMG_9942.HEIC',
+    '/assets/gallery/IMG_9943.HEIC'
 ];
 
 export const whatsappNumber = "5493794020786";

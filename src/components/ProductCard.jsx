@@ -1,34 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ProductCard = ({ product, onProductClick }) => {
     const defaultImage = 'assets/logo.png';
-    const [currentImg, setCurrentImg] = useState(product?.image || defaultImage);
-    const [isHovered, setIsHovered] = useState(false);
-    const [isInView, setIsInView] = useState(false);
+    const hasMultipleImages = product?.images && Array.isArray(product.images) && product.images.length > 1;
+
+    // Solo manejamos el índice si hay varias imágenes
+    const [imgIdx, setImgIdx] = useState(0);
     const [imgLoading, setImgLoading] = useState(true);
 
-    useEffect(() => {
-        let interval;
-        // Se activa el carrusel si hay hover (PC) O si está a la vista (Móvil)
-        const shouldRotate = (isHovered || isInView) &&
-            product?.images &&
-            Array.isArray(product.images) &&
-            product.images.length > 1;
-
-        if (shouldRotate) {
-            let idx = 0;
-            interval = setInterval(() => {
-                idx = (idx + 1) % product.images.length;
-                setCurrentImg(product.images[idx]);
-            }, 2000); // Un poco más lento para que sea menos frenético en móvil
-        } else {
-            setCurrentImg(product?.image || defaultImage);
-        }
-        return () => clearInterval(interval);
-    }, [isHovered, isInView, product?.images, product?.image]);
-
     if (!product) return null;
+
+    const currentImgUrl = hasMultipleImages ? product.images[imgIdx] : (product?.image || defaultImage);
+
+    const handleNext = (e) => {
+        e.stopPropagation();
+        setImgLoading(true);
+        setImgIdx((prev) => (prev + 1) % product.images.length);
+    };
+
+    const handlePrev = (e) => {
+        e.stopPropagation();
+        setImgLoading(true);
+        setImgIdx((prev) => (prev - 1 + product.images.length) % product.images.length);
+    };
 
     const waMessage = `Hola, me interesa el producto "${product.title}" que vi en su catálogo.`;
     const waLink = `https://wa.me/5493794020786?text=${encodeURIComponent(waMessage)}`;
@@ -46,12 +42,8 @@ const ProductCard = ({ product, onProductClick }) => {
             className={`product-card ${product.isPromo ? 'is-promo' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            onViewportEnter={() => setIsInView(true)}
-            onViewportLeave={() => setIsInView(false)}
             transition={{ duration: 0.5 }}
-            viewport={{ amount: 0.5 }} // Se activa cuando se ve al menos el 50%
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            viewport={{ once: true, amount: 0.2 }}
             onClick={() => onProductClick(product)}
             style={{ cursor: 'pointer' }}
         >
@@ -60,13 +52,13 @@ const ProductCard = ({ product, onProductClick }) => {
                     <i className="fas fa-tag"></i> PROMO
                 </div>
             )}
-            <div className={`card-image ${imgLoading ? 'is-loading' : ''}`}>
+            <div className={`card-image ${imgLoading ? 'is-loading' : ''} carousel-container`}>
                 <motion.img
-                    src={currentImg}
+                    src={currentImgUrl}
                     alt={product.title}
                     className="product-img"
                     loading="lazy"
-                    whileHover={{ scale: 1.08 }}
+                    whileHover={{ scale: 1.05 }}
                     onLoad={() => setImgLoading(false)}
                     onError={(e) => {
                         e.target.onerror = null;
@@ -74,6 +66,22 @@ const ProductCard = ({ product, onProductClick }) => {
                         setImgLoading(false);
                     }}
                 />
+
+                {hasMultipleImages && (
+                    <>
+                        <button className="carousel-btn prev-btn" onClick={handlePrev} aria-label="Anterior imagen">
+                            <ChevronLeft size={20} />
+                        </button>
+                        <button className="carousel-btn next-btn" onClick={handleNext} aria-label="Siguiente imagen">
+                            <ChevronRight size={20} />
+                        </button>
+                        <div className="carousel-dots">
+                            {product.images.map((_, idx) => (
+                                <span key={idx} className={`dot ${idx === imgIdx ? 'active' : ''}`} />
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
             <div className="card-content">
                 <h3 className="title">{product.title || 'Producto'}</h3>

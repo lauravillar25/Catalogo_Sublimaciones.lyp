@@ -1,8 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, MessageCircle } from 'lucide-react';
+import { X, MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ImageModal = ({ isOpen, product, onClose }) => {
+    const defaultImage = 'assets/logo.png';
+    const [imgIdx, setImgIdx] = useState(0);
+
+    // Sincronizar el índice inicial cuando cambia el producto
+    useEffect(() => {
+        setImgIdx(0);
+    }, [product]);
+
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -21,12 +29,25 @@ const ImageModal = ({ isOpen, product, onClose }) => {
 
     if (!product) return null;
 
+    const hasMultipleImages = product.images && product.images.length > 1;
+    const currentImgUrl = hasMultipleImages ? product.images[imgIdx] : (product?.image || defaultImage);
+
     const formatPrice = (price) => {
         try {
             return new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS' }).format(price || 0);
         } catch (e) {
             return `$${price || 0}`;
         }
+    };
+
+    const handleNext = (e) => {
+        e.stopPropagation();
+        setImgIdx((prev) => (prev + 1) % product.images.length);
+    };
+
+    const handlePrev = (e) => {
+        e.stopPropagation();
+        setImgIdx((prev) => (prev - 1 + product.images.length) % product.images.length);
     };
 
     const waMessage = `Hola, me interesa el producto "${product.title}" que vi en su catálogo.`;
@@ -54,8 +75,40 @@ const ImageModal = ({ isOpen, product, onClose }) => {
                         </button>
 
                         <div className="modal-grid">
-                            <div className="modal-image-container">
-                                <img src={product.image} alt={product.title} className="modal-main-img" />
+                            <div className="modal-image-container carousel-container">
+                                <motion.img
+                                    key={currentImgUrl}
+                                    src={currentImgUrl}
+                                    alt={product.title}
+                                    className="modal-main-img"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.2 }}
+                                />
+
+                                {hasMultipleImages && (
+                                    <>
+                                        <button className="carousel-btn prev-btn" onClick={handlePrev} aria-label="Anterior imagen">
+                                            <ChevronLeft size={24} />
+                                        </button>
+                                        <button className="carousel-btn next-btn" onClick={handleNext} aria-label="Siguiente imagen">
+                                            <ChevronRight size={24} />
+                                        </button>
+
+                                        {/* Miniaturas */}
+                                        <div className="modal-thumbnails">
+                                            {product.images.map((src, idx) => (
+                                                <button
+                                                    key={idx}
+                                                    className={`modal-thumb-btn ${imgIdx === idx ? 'is-active' : ''}`}
+                                                    onClick={() => setImgIdx(idx)}
+                                                >
+                                                    <img src={src} alt={`Vista ${idx + 1}`} loading="lazy" />
+                                                </button>
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
                             </div>
 
                             <div className="modal-details">
@@ -66,8 +119,9 @@ const ImageModal = ({ isOpen, product, onClose }) => {
                                         dangerouslySetInnerHTML={{ __html: product.description }}
                                     />
                                 )}
-                                <div className="modal-price">{formatPrice(product.price)}</div>
-
+                                {!product.isGallery && (
+                                    <div className="modal-price">{formatPrice(product.price)}</div>
+                                )}
                                 <a href={waLink} target="_blank" rel="noopener noreferrer" className="modal-cta-btn">
                                     Consultar por WhatsApp <MessageCircle size={20} />
                                 </a>
@@ -81,3 +135,4 @@ const ImageModal = ({ isOpen, product, onClose }) => {
 };
 
 export default ImageModal;
+
