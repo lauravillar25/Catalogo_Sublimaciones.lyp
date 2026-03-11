@@ -3,7 +3,7 @@ export const products = [
     {
         id: 1000,
         title: "Combo Completo - Set de Jardín",
-        description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero irrompible y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $16.300</span></li></ul>",
+        description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero y tela sublimable</li></li></ul>",
         price: 16300,
         image: "/assets/promos/combo_completo/combo_completo_jardin.png",
         images: [
@@ -17,7 +17,7 @@ export const products = [
     {
         id: 1001,
         title: "Combo Simple - Set de Jardín",
-        description: "Combo esencial para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita</li><li>Material: Polímero y tela sublimable</li><li><span class=\"promo-highlight\">Precio especial: $12.000</span></li></ul>",
+        description: "Combo esencial para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita</li><li>Material: Polímero y tela sublimable</li></li></ul>",
         price: 12000,
         image: "/assets/promos/combo_simple/22w15_A54-2.png",
         images: [
@@ -33,7 +33,7 @@ export const products = [
     {
         id: 1005,
         title: "Combo Taza + Curarita de Polímero",
-        description: "Set plástico irrompible ideal para los más chicos. <ul><li>Incluye: Taza de polímero + Cucharita (Curarita) de polímero</li><li>Material: Polímero sublimable de alta calidad</li><li><span class=\"promo-highlight\">Precio especial: $5.000</span></li></ul>",
+        description: "Set Polímero ideal para los más chicos. <ul><li>Incluye: Taza de polímero + Cucharita (Curarita) de polímero</li><li>Material: Polímero sublimable de alta calidad</li></li></ul>",
         price: 5000,
         image: "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-06 at 13.49.58.jpeg",
         images: [
@@ -47,7 +47,7 @@ export const products = [
     {
         id: 1006,
         title: "Set 3 Piezas - Jardín",
-        description: "Set esencial para el nivel inicial. <ul><li>Incluye: Toalla de mano + Servilleta + Individual</li><li>Material: Tela sublimable de alta calidad, resistente a lavados</li><li><span class=\"promo-highlight\">Precio especial: $8.700</span></li></ul>",
+        description: "Set esencial para el nivel inicial. <ul><li>Incluye: Toalla de mano + Servilleta + Individual</li><li>Material: Tela sublimable de alta calidad, resistente a lavados</li></li></ul>",
         price: 8700,
         image: "/assets/promos/set_3_piezas/WhatsApp Image 2026-03-06 at 13.49.57 (1).jpeg",
         images: [
@@ -61,7 +61,7 @@ export const products = [
     {
         id: 1007,
         title: "Combo Escritorio – “Tu espacio con café y estilo”",
-        description: "Set ideal para el trabajo o estudio. <ul><li>Incluye: Taza de cerámica importada + Pad mouse personalizado</li><li>Material: Cerámica y tela</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
+        description: "Set ideal para el trabajo o estudio. <ul><li>Incluye: Taza de cerámica importada + Pad mouse personalizado</li><li>Material: Cerámica y tela</li></li></ul>",
         price: 10000,
         image: "/assets/promos/combo_escritorio/846312c8c8e11a7b45f5b2c12c606f9c.jpg",
         images: [
@@ -74,7 +74,7 @@ export const products = [
     {
         id: 1003,
         title: "Combo Dúo Perfecto – “Tu día completo en dos sorbos”",
-        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li><li><span class=\"promo-highlight\">Precio especial: $15.000</span></li></ul>",
+        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li></li></ul>",
         price: 15000,
         image: "/assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
         images: [
@@ -87,7 +87,7 @@ export const products = [
     {
         id: 1002,
         title: "Promo 2 Tazas de Cerámica",
-        description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li><li><span class=\"promo-highlight\">Promo especial: 2 tazas x $11.500</span></li></ul>",
+        description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li></li></ul>",
         price: 11500,
         image: "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
         images: [
@@ -101,7 +101,7 @@ export const products = [
     {
         id: 1004,
         title: "Set de Asado",
-        description: "El regalo perfecto para los amantes del asado. <ul><li>Incluye: Tabla de madera + Funda personalizada</li><li>Material: Madera de alta calidad</li><li><span class=\"promo-highlight\">Precio especial: $10.000</span></li></ul>",
+        description: "El regalo perfecto para los amantes del asado. <ul><li>Incluye: Tabla de madera + Funda personalizada</li><li>Material: Madera de alta calidad</li></li></ul>",
         price: 10000,
         image: "/assets/promos/set de asado/1.jpeg",
         images: [
@@ -115,8 +115,8 @@ export const products = [
     },
     {
         id: 1008,
-        title: "Combo Ritual – porque cada pieza representa un ritual: café, mate, cerveza.",
-        description: "Porque cada pieza representa un ritual: café, mate, cerveza. <ul><li>Incluye: Choop de polímero + Mate de polímero + Taza de cerámica</li><li>Material: Polímero irrompible y cerámica importada</li><li><span class=\"promo-highlight\">Precio especial: $16.000</span></li></ul>",
+        title: "Combo Ritual – “Cada pieza representa un ritual: café, mate, cerveza.”",
+        description: "<ul><li>Incluye: Choop de polímero + Mate de polímero + Taza de cerámica</li><li>Material: Polímero y cerámica importada</li></li></ul>",
         price: 16000,
         image: "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14.jpeg",
         images: [
@@ -129,7 +129,7 @@ export const products = [
     {
         id: 1010,
         title: "Combo Asador – “El kit que nunca falla”",
-        description: "Todo lo necesario para un asado completo. <ul><li>Incluye: Set de asado (tabla y funda) + Choop de polímero + Destapador de polímero</li><li>Material: Madera, polímero</li><li><span class=\"promo-highlight\">Precio especial: $16.000</span></li></ul>",
+        description: "Todo lo necesario para un asado completo. <ul><li>Incluye: Set de asado (tabla y funda) + Choop de polímero + Destapador de polímero</li><li>Material: Madera, polímero</li></li></ul>",
         price: 16000,
         image: "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31.jpeg",
         images: [
@@ -143,7 +143,7 @@ export const products = [
     {
         id: 1009,
         title: "Combo Versátil – “Para cada momento, tu compañero ideal”",
-        description: "Versatilidad en tus bebidas. <ul><li>Incluye: Taza de cerámica + Choop de polímero</li><li>Material: Cerámica importada y polímero resistente</li><li><span class=\"promo-highlight\">Precio especial: $10.900</span></li></ul>",
+        description: "Versatilidad en tus bebidas. <ul><li>Incluye: Taza de cerámica + Choop de polímero</li><li>Material: Cerámica importada y polímero resistente</li></li></ul>",
         price: 10900,
         image: "/assets/promos/combo_versatil/1.jpeg",
         images: [
@@ -304,7 +304,7 @@ export const products = [
     {
         id: 100,
         title: "Jarro Chopp de Polímero",
-        description: "Jarro estilo Chopp, irrompible y brillante. Ideal para regalar. <ul><li>Material: Plástico Polímero</li><li>Capacidad: 590 mL</li><li>Medidas: 17cm alto x 8cm diámetro</li><li>Apto Microondas: Sí</li></ul>",
+        description: "Jarro estilo Chopp, Polímero y brillante. Ideal para regalar. <ul><li>Material: Plástico Polímero</li><li>Capacidad: 590 mL</li><li>Medidas: 17cm alto x 8cm diámetro</li><li>Apto Microondas: Sí</li></ul>",
         price: 7500,
         image: "/assets/jarros-polimero/jarro_1.jpg",
         images: [
@@ -320,7 +320,7 @@ export const products = [
     {
         id: 101,
         title: "Jarro Térmico de Café 450ml",
-        description: "Jarro con asa, ideal para la oficina o el auto. <ul><li>Capacidad: 450 mL</li><li>Altura: 24 cm</li><li>Material: Polímero/Plástico</li><li>Precio: $7000</li></ul>",
+        description: "Jarro con asa, ideal para la oficina o el auto. <ul><li>Capacidad: 450 mL</li><li>Altura: 24 cm</li><li>Material: Polímero/Plástico</li></li></ul>",
         price: 7000,
         image: "/assets/jarros-cafe/jarro_cafe_1.jpg",
         images: [
@@ -334,7 +334,7 @@ export const products = [
     {
         id: 92,
         title: "Jarro Tipo Cantimplora",
-        description: "Práctico jarro tipo cantimplora, ideal para los más chicos. <ul><li>Capacidad: 400 mL</li><li>Colores tapa: Rosa, Celeste, Verde</li><li>Precio: $5000</li></ul>",
+        description: "Práctico jarro tipo cantimplora, ideal para los más chicos. <ul><li>Capacidad: 400 mL</li><li>Colores tapa: Rosa, Celeste, Verde</li></li></ul>",
         price: 5000,
         image: "/assets/cantimploras/cantimplora_1.png",
         images: [
@@ -350,7 +350,7 @@ export const products = [
     {
         id: 110,
         title: "Taza de Polímero",
-        description: "Taza de polímero (plástico) irrompible. Ideal para niños y jardines. <ul><li>Medidas: 8.5cm de alto x 8cm de diámetro</li><li>Material: Polímero Sublimable</li><li>Precio: $3000</li><li>Apto Microondas: Sí</li></ul>",
+        description: "Taza de Polímero. Ideal para niños y jardines. Medidas: 8.5cm de alto x 8cm de diámetro. Material: Polímero Sublimable. Precio: $3000. Apto Microondas: Sí.",
         price: 3000,
         image: "/assets/polimero-varios/taza_polimero_1.jpg",
         images: [
@@ -365,7 +365,7 @@ export const products = [
     {
         id: 111,
         title: "Vaso de Café 200cc",
-        description: "Vaso pequeño, ideal para café o cortado. <ul><li>Capacidad: 200 mL</li><li>Medidas: 9cm alto x 8cm diámetro</li><li>Precio: $4600</li></ul>",
+        description: "Vaso pequeño, ideal para café o cortado. <ul><li>Capacidad: 200 mL</li><li>Medidas: 9cm alto x 8cm diámetro</li></li></ul>",
         price: 4600,
         image: "/assets/polimero-varios/vaso_cafe_1.jpg",
         images: [
@@ -378,7 +378,7 @@ export const products = [
     {
         id: 112,
         title: "Vaso / Lapicero",
-        description: "Vaso multiuso, ideal como lapicero o vaso de bebida. <ul><li>Capacidad: 450 cc</li><li>Medidas: 9cm alto x 8cm diámetro</li><li>Precio: $3200</li></ul>",
+        description: "Vaso multiuso, ideal como lapicero o vaso de bebida. <ul><li>Capacidad: 450 cc</li><li>Medidas: 9cm alto x 8cm diámetro</li></li></ul>",
         price: 3200,
         image: "/assets/polimero-varios/vaso_lapicero_1.jpg",
         images: [
@@ -392,7 +392,7 @@ export const products = [
     {
         id: 120,
         title: "Mate de Polímero",
-        description: "Mate de polímero resistente, ideal para personalizar. <ul><li>Medidas: 10.5cm alto x 8cm diámetro</li><li>Capacidad: 300 ml</li><li>Precio: $4200</li></ul>",
+        description: "Mate de polímero resistente, ideal para personalizar. <ul><li>Medidas: 10.5cm alto x 8cm diámetro</li><li>Capacidad: 300 ml</li></li></ul>",
         price: 4200,
         image: "/assets/polimero-varios/mate_polimero_1.jpg",
         images: [
@@ -404,7 +404,7 @@ export const products = [
     {
         id: 130,
         title: "Llavero Cinta Corto Colgante",
-        description: "Llavero de cinta con argolla y mosquetón. <ul><li>Medidas: 2cm x 18cm aprox</li><li>Incluye: Argolla y mosquetón</li><li>Precio unidad: $2500</li><li><span class=\"promo-highlight\">Promo x 10: $14000</span></li></ul>",
+        description: "Llavero de cinta con argolla y mosquetón. <ul><li>Medidas: 2cm x 18cm aprox</li><li>Incluye: Argolla y mosquetón</li></li></ul>",
         price: 2500,
         image: "/assets/llaveros/llavero_cinta_1.jpg",
         images: [
@@ -418,7 +418,7 @@ export const products = [
     {
         id: 131,
         title: "Llavero Destapador",
-        description: "Práctico llavero con función de destapador incorporada. <ul><li>Medidas: 7cm alto x 4.6cm ancho aprox</li><li>Material: Polímero / Metal</li><li>Precio unidad: $2500</li><li><span class=\"promo-highlight\">Promo x 12: $18000</span></li></ul>",
+        description: "Práctico llavero con función de destapador incorporada. <ul><li>Medidas: 7cm alto x 4.6cm ancho aprox</li><li>Material: Polímero / Metal</li></li></ul>",
         price: 2500,
         image: "/assets/llaveros/llavero_destapador_1.jpg",
         images: [
@@ -433,7 +433,7 @@ export const products = [
     {
         id: 132,
         title: "Llaveros de Polímero - Varias Formas",
-        description: "Llaveros de polímero resistentes y brillantes. Personalizables con el diseño que prefieras. <ul><li>Formas disponibles: Cuadrado, Redondo, Corazón</li><li>Material: Polímero Sublimable</li><li>Precio unidad: $1500</li><li><span class=\"promo-highlight\">Promo x 12: $12400</span></li></ul>",
+        description: "Llaveros de polímero resistentes y brillantes. Personalizables con el diseño que prefieras. <ul><li>Formas disponibles: Cuadrado, Redondo, Corazón</li><li>Material: Polímero Sublimable</li></li></ul>",
         price: 1500,
         image: "/assets/llaveros/llavero_polimero_cuadrado.jpg",
         images: [
