@@ -276,7 +276,7 @@ export const products = [
         id: 90,
         title: "Hoppy Deportivo Personalizado",
         description: "Ideal para el colegio o deporte, personalizables con nombre y personaje favorito. <ul><li>Modelo: Hoppy Deportivo</li><li>Capacidad: 500 ml</li><li>Material: Polímero Sublimable</li><li>Mantiene: Frío 6hs / Caliente 2hs</li></ul>",
-        price: 9000,
+        price: 11000,
         image: "/assets/botellitas/hoppy_roblox.jpg",
         images: [
             "/assets/botellitas/hoppy_roblox.jpg",
@@ -305,7 +305,7 @@ export const products = [
         id: 100,
         title: "Jarro Chopp de Polímero",
         description: "Jarro estilo Chopp, Polímero y brillante. Ideal para regalar. <ul><li>Material: Plástico Polímero</li><li>Capacidad: 590 mL</li><li>Medidas: 17cm alto x 8cm diámetro</li><li>Apto Microondas: Sí</li></ul>",
-        price: 7500,
+        price: 7800,
         image: "/assets/jarros-polimero/jarro_1.jpg",
         images: [
             "/assets/jarros-polimero/jarro_1.jpg",
@@ -335,7 +335,7 @@ export const products = [
         id: 92,
         title: "Jarro Tipo Cantimplora",
         description: "Práctico jarro tipo cantimplora, ideal para los más chicos. <ul><li>Capacidad: 400 mL</li><li>Colores tapa: Rosa, Celeste, Verde</li></li></ul>",
-        price: 5000,
+        price: 6000,
         image: "/assets/cantimploras/cantimplora_1.png",
         images: [
             "/assets/cantimploras/cantimplora_1.png",
@@ -366,7 +366,7 @@ export const products = [
         id: 111,
         title: "Vaso de Café 200cc",
         description: "Vaso pequeño, ideal para café o cortado. <ul><li>Capacidad: 200 mL</li><li>Medidas: 9cm alto x 8cm diámetro</li></li></ul>",
-        price: 4600,
+        price: 5000,
         image: "/assets/polimero-varios/vaso_cafe_1.jpg",
         images: [
             "/assets/polimero-varios/vaso_cafe_1.jpg",
