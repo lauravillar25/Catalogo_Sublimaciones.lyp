@@ -350,8 +350,8 @@ export const products = [
     {
         id: 110,
         title: "Taza de Polímero",
-        description: "Taza de Polímero. Ideal para niños y jardines. Medidas: 8.5cm de alto x 8cm de diámetro. Material: Polímero Sublimable. Precio: $3000. Apto Microondas: Sí.",
-        price: 3000,
+        description: "Taza de Polímero. Ideal para niños y jardines. Medidas: 8.5cm de alto x 8cm de diámetro. Material: Polímero Sublimable. Precio: $3500. Apto Microondas: Sí.",
+        price: 3500,
         image: "/assets/polimero-varios/taza_polimero_1.jpg",
         images: [
             "/assets/polimero-varios/taza_polimero_1.jpg",
@@ -366,7 +366,7 @@ export const products = [
         id: 111,
         title: "Vaso de Café 200cc",
         description: "Vaso pequeño, ideal para café o cortado. <ul><li>Capacidad: 200 mL</li><li>Medidas: 9cm alto x 8cm diámetro</li></li></ul>",
-        price: 5000,
+        price: 5800,
         image: "/assets/polimero-varios/vaso_cafe_1.jpg",
         images: [
             "/assets/polimero-varios/vaso_cafe_1.jpg",
