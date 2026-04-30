@@ -21,11 +21,10 @@ export const products = [
         title: "Promo 2 Tazas de Cerámica",
         description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li></li></ul>",
         price: 12500,
-        image: "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
+        image: "/assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg",
         images: [
-            "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
-            "/assets/promos/combo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg",
-            "/assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg"
+            "/assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg",
+            "/assets/promos/combo2_tazas/WhatsApp Image 2026-03-09 at 21.46.27 (1).jpeg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -363,39 +362,45 @@ export const products = [
     }
 ];
 
-export const galleryImages = [
-    '/assets/gallery/work_1.jpg',
-    '/assets/gallery/work_2.jpg',
-    '/assets/gallery/work_3.jpg',
-    '/assets/gallery/work_4.jpg',
-    '/assets/gallery/work_5.jpg',
-    '/assets/gallery/20230811_164036.jpg',
-    '/assets/gallery/329840161_1190699441634569_4016815056354967411_n.jpg',
-    '/assets/gallery/487016607_9388556617918480_4890384538005480370_n.jpg',
-    '/assets/gallery/487191878_9388556561251819_6839682983711695490_n.jpg',
-    '/assets/gallery/487205781_9388556727918469_4867086631559263037_n.jpg',
-    '/assets/gallery/4969826037277592497.jpg',
-    '/assets/gallery/e8ba13a07600472979f29b7eaa2eacfc.jpg',
-    '/assets/gallery/IMG_0393.jpg',
-    '/assets/gallery/IMG_6359.jpg',
-    '/assets/gallery/IMG_6728.jpg',
-    '/assets/gallery/IMG_7042.jpg',
-    '/assets/gallery/IMG_7043.jpg',
-    '/assets/gallery/IMG_8559.jpg',
-    '/assets/gallery/photo1687223028_2.jpeg',
-    '/assets/gallery/photo1687223383.jpeg',
-    '/assets/gallery/photo1687225512.jpeg',
-    '/assets/gallery/photo1687225512_1.jpeg',
-    '/assets/gallery/photo1716387483.jpeg',
-    '/assets/gallery/Screenshot_20230617_112028_Facebook.jpg',
-    '/assets/gallery/Screenshot_20230617_112035_Facebook.jpg',
-    '/assets/gallery/Screenshot_20230617_112040_Facebook.jpg',
-    '/assets/gallery/WhatsApp_Image_2024-06-10_at_12.47.18_1.jpeg',
-    '/assets/gallery/IMG_0074.HEIC',
-    '/assets/gallery/IMG_9127.HEIC',
-    '/assets/gallery/IMG_9941.HEIC',
-    '/assets/gallery/IMG_9942.HEIC',
-    '/assets/gallery/IMG_9943.HEIC'
+export const gallerySections = [
+    {
+        title: "Tu Equipo Favorito",
+        images: [
+            '/assets/gallery/tu_equipo_favorito/329840161_1190699441634569_4016815056354967411_n.jpg',
+            '/assets/gallery/tu_equipo_favorito/487016607_9388556617918480_4890384538005480370_n.jpg',
+            '/assets/gallery/tu_equipo_favorito/487191878_9388556561251819_6839682983711695490_n.jpg',
+            '/assets/gallery/tu_equipo_favorito/487205781_9388556727918469_4867086631559263037_n.jpg',
+            '/assets/gallery/tu_equipo_favorito/4938740326705769726.jpg',
+            '/assets/gallery/tu_equipo_favorito/IMG_6728.jpg',
+            '/assets/gallery/tu_equipo_favorito/Screenshot_20230617_112035_Facebook.jpg',
+            '/assets/gallery/tu_equipo_favorito/photo1687222980 (1).jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687222980 (2).jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687222980 (3).jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687223365.jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687223557.jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687223830 (1).jpeg',
+            '/assets/gallery/tu_equipo_favorito/photo1687223830.jpeg'
+        ]
+    },
+    {
+        title: "Frases",
+        images: [
+            '/assets/gallery/frases/20240613_165912.jpg',
+            '/assets/gallery/frases/465883015_18077582734603806_459847597835012415_n.jpg',
+            '/assets/gallery/frases/465946911_18077582743603806_1921292741064393304_n.jpg',
+            '/assets/gallery/frases/IMG_6359.jpg',
+            '/assets/gallery/frases/IMG_8559.jpg',
+            '/assets/gallery/frases/WhatsApp Image 2024-06-10 at 12.47.18 (1).jpeg'
+        ]
+    },
+    {
+        title: "Día del Maestro",
+        images: [
+            '/assets/gallery/Día_Del_MAestro/548016071_18107318059603806_2957029487685456641_n.jpg',
+            '/assets/gallery/Día_Del_MAestro/548070030_18107318032603806_5918114264506125532_n.jpg',
+            '/assets/gallery/Día_Del_MAestro/548914356_18107318068603806_8765791272092175315_n.jpg'
+        ]
+    }
 ];
 
 export const whatsappNumber = "5493794020786";

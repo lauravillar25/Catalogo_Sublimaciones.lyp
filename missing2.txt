@@ -1,0 +1,17 @@
+﻿[
+  {
+    "id": 1002,
+    "type": "main",
+    "path": "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg"
+  },
+  {
+    "id": 1002,
+    "type": "gallery",
+    "path": "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg"
+  },
+  {
+    "id": 1002,
+    "type": "gallery",
+    "path": "/assets/promos/combo2_tazas/449fc9b6e1e39e0da6f2f6abf42a31ec.jpg"
+  }
+]

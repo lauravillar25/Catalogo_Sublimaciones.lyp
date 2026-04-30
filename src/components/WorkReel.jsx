@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Camera, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const WorkReel = ({ images, onImageClick }) => {
+const WorkReel = ({ images, onImageClick, title = "Trabajos Realizados", hideIcon = false }) => {
     const scrollRef = useRef(null);
     const defaultImage = '/assets/logo.png';
 
@@ -23,7 +23,7 @@ const WorkReel = ({ images, onImageClick }) => {
         <section className="work-reel-full-width">
             <div className="work-reel-header">
                 <h2 className="work-reel-title">
-                    <Camera size={28} /> Trabajos Realizados
+                    {!hideIcon && <Camera size={28} />} {title}
                 </h2>
                 <div className="work-reel-controls">
                     <button className="reel-nav-btn" onClick={() => scroll('left')} aria-label="Anterior">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { products, galleryImages, whatsappNumber } from './data/products';
+import { products, gallerySections, whatsappNumber } from './data/products';
 import ProductCard from './components/ProductCard';
 import WorkReel from './components/WorkReel';
 import ImageModal from './components/ImageModal';
@@ -90,7 +90,17 @@ function App() {
             <React.Fragment key={categoryName}>
               {/* Inject Gallery BEFORE "Polímeros Varios" */}
               {categoryName === "Polímeros Varios" && (
-                <WorkReel images={galleryImages} onImageClick={(img) => setSelectedProduct({ image: img, title: 'Galería', isGallery: true })} />
+                <section className="gallery-sections-container" style={{ margin: "2rem 0" }}>
+                  {gallerySections.map((section, sectionIdx) => (
+                    <WorkReel 
+                      key={sectionIdx} 
+                      title={section.title} 
+                      images={section.images} 
+                      hideIcon={sectionIdx > 0}
+                      onImageClick={(img) => setSelectedProduct({ image: img, title: 'Galería', isGallery: true })} 
+                    />
+                  ))}
+                </section>
               )}
 
               <div id={categoryId} className={`category-header ${isPromo ? 'promo-header' : ''}`}>
