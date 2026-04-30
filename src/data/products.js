@@ -6,10 +6,11 @@ export const products = [
         title: "Combo Escritorio – “Tu espacio con café y estilo”",
         description: "Set ideal para el trabajo o estudio. <ul><li>Incluye: Taza de cerámica importada + Pad mouse personalizado</li><li>Material: Cerámica y tela</li></li></ul>",
         price: 10000,
-        image: "/assets/promos/combo_escritorio/846312c8c8e11a7b45f5b2c12c606f9c.jpg",
+        image: "/assets/promos/combo_escritorio/combo_escritorio_nuevo_1.png",
         images: [
-            "/assets/promos/combo_escritorio/846312c8c8e11a7b45f5b2c12c606f9c.jpg",
-            "/assets/promos/combo_escritorio/c9c175aa4b0c82c502c12e9a5c1f7da7.jpg"
+            "/assets/promos/combo_escritorio/combo_escritorio_nuevo_1.png",
+            "/assets/promos/combo_escritorio/combo_escritorio_nuveo_2.jpeg",
+            "/assets/promos/combo_escritorio/combo_escritorio_nuevo_3.jpeg"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -66,13 +67,12 @@ export const products = [
         title: "Tazas con Cuchara - Diseños Personalizados",
         description: "Hermosas tazas de cerámica con interior y asa de color. Incluye cuchara haciendo juego. <ul><li>Consultar colores disponibles</li><li>Medidas: 9cm</li><li>Capacidad: 330ml</li></ul>",
         price: 10000,
-        image: "/assets/taza_con_curarita/taza_curarita.png",
+        image: "/assets/taza_con_curarita/taza_curatita_primero.jpg",
         images: [
-            "/assets/taza_con_curarita/taza_curarita.png",
-            "/assets/taza_interior_color/taza_dbz.jpg",
-            "/assets/taza_con_curarita/taza_bts.jpg",
-            "/assets/taza_con_curarita/taza_boca.jpg",
-            "/assets/taza_con_curarita/taza_simpsons.jpg"
+            "/assets/taza_con_curarita/taza_curatita_primero.jpg",
+            "/assets/taza_con_curarita/taza_curarita_1.jpeg",
+            "/assets/taza_con_curarita/taza_curatita_2.jpeg",
+            "/assets/taza_con_curarita/taza_cucharita_3.jpeg"
         ],
         category: "Tazas de Cerámica"
     },
