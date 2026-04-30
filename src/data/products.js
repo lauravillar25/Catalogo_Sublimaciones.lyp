@@ -400,6 +400,38 @@ export const gallerySections = [
             '/assets/gallery/Día_Del_MAestro/548070030_18107318032603806_5918114264506125532_n.jpg',
             '/assets/gallery/Día_Del_MAestro/548914356_18107318068603806_8765791272092175315_n.jpg'
         ]
+    },
+    {
+        title: "Otros",
+        images: [
+            '/assets/gallery/Otros/0bcf02bd01540e71cecf4705046d22d2.jpg',
+            '/assets/gallery/Otros/20230811_164036.jpg',
+            '/assets/gallery/Otros/2473af8706586ecd80ff8b62acb06908.jpg',
+            '/assets/gallery/Otros/481103094_612032081688940_4377820294587818926_n.jpg',
+            '/assets/gallery/Otros/482021030_612031835022298_6530619404506875217_n.jpg',
+            '/assets/gallery/Otros/4969826037277592497.jpg',
+            '/assets/gallery/Otros/4969826037277592501.jpg',
+            '/assets/gallery/Otros/514951889_2196654324088916_205004867076037099_n.jpg',
+            '/assets/gallery/Otros/57de8c23a402f99890bee0775eedf957.jpg',
+            '/assets/gallery/Otros/670543549_18129433978603806_8855193712926487049_n.jpg',
+            '/assets/gallery/Otros/9e9c9974855c49072ee43025ebe4a046.jpg',
+            '/assets/gallery/Otros/IMG_0393.jpg',
+            '/assets/gallery/Otros/IMG_7042.jpg',
+            '/assets/gallery/Otros/IMG_7043.jpg',
+            '/assets/gallery/Otros/Screenshot_20230617_112028_Facebook.jpg',
+            '/assets/gallery/Otros/Screenshot_20230617_112040_Facebook.jpg',
+            '/assets/gallery/Otros/WhatsApp Image 2024-06-10 at 12.47.18 (2).jpeg',
+            '/assets/gallery/Otros/WhatsApp_Image_2024-06-10_at_12.47.18_1.jpeg',
+            '/assets/gallery/Otros/d1c58507ff37008ac9fe61768c4269fe.jpg',
+            '/assets/gallery/Otros/e8ba13a07600472979f29b7eaa2eacfc.jpg',
+            '/assets/gallery/Otros/photo1687223028_2.jpeg',
+            '/assets/gallery/Otros/photo1687223383.jpeg',
+            '/assets/gallery/Otros/photo1687225512.jpeg',
+            '/assets/gallery/Otros/photo1687225512_1.jpeg',
+            '/assets/gallery/Otros/photo1716387483.jpeg',
+            '/assets/gallery/Otros/work_1.jpg',
+            '/assets/gallery/Otros/work_4.jpg'
+        ]
     }
 ];
 
