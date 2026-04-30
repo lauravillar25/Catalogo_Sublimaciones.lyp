@@ -1,63 +1,6 @@
 export const products = [
     // Category: COMBOS ¡OFERTAS!
-    {
-        id: 1000,
-        title: "Combo Completo - Set de Jardín",
-        description: "El set más completo para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita + Cantimplora</li><li>Material: Polímero y tela sublimable</li></li></ul>",
-        price: 16300,
-        image: "/assets/promos/combo_completo/combo_completo_jardin.png",
-        images: [
-            "/assets/promos/combo_completo/combo_completo_jardin.png",
-            "/assets/promos/combo_completo/combo_completo_jardin2.jpeg",
-            "/assets/promos/combo_completo/combo_jardin_1.jpg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1001,
-        title: "Combo Simple - Set de Jardín",
-        description: "Combo esencial para el jardín. <ul><li>Incluye: Servilleta + Individual + Toalla de mano + Taza + Cucharita</li><li>Material: Polímero y tela sublimable</li></li></ul>",
-        price: 12000,
-        image: "/assets/promos/combo_simple/22w15_A54-2.png",
-        images: [
-            "/assets/promos/combo_simple/22w15_A54-2.png",
-            "/assets/promos/combo_simple/D_NQ_NP_2X_618523-MLA92271902142_092025-F.webp",
-            "/assets/promos/combo_simple/D_NQ_NP_852262-MLA53230431562_012023-O.webp",
-            "/assets/promos/combo_simple/D_NQ_NP_860979-MLA77520505935_072024-O.webp",
-            "/assets/promos/combo_simple/combo_jardin_1.jpg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1005,
-        title: "Combo Taza + Curarita de Polímero",
-        description: "Set Polímero ideal para los más chicos. <ul><li>Incluye: Taza de polímero + Cucharita (Curarita) de polímero</li><li>Material: Polímero sublimable de alta calidad</li></li></ul>",
-        price: 5000,
-        image: "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-06 at 13.49.58.jpeg",
-        images: [
-            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-06 at 13.49.58.jpeg",
-            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-09 at 21.46.28 (2).jpeg",
-            "/assets/promos/combo_taza_polimero/WhatsApp Image 2026-03-09 at 21.46.28 (3).jpeg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1006,
-        title: "Set 3 Piezas - Jardín",
-        description: "Set esencial para el nivel inicial. <ul><li>Incluye: Toalla de mano + Servilleta + Individual</li><li>Material: Tela sublimable de alta calidad, resistente a lavados</li></li></ul>",
-        price: 8700,
-        image: "/assets/promos/set_3_piezas/WhatsApp Image 2026-03-06 at 13.49.57 (1).jpeg",
-        images: [
-            "/assets/promos/set_3_piezas/WhatsApp Image 2026-03-06 at 13.49.57 (1).jpeg",
-            "/assets/promos/set_3_piezas/D_NQ_NP_752636-MLA48771770671_012022-O.webp",
-            "/assets/promos/set_3_piezas/D_NQ_NP_854717-MLA103556402201_012026-O.webp"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
+
     {
         id: 1007,
         title: "Combo Escritorio – “Tu espacio con café y estilo”",
@@ -71,24 +14,12 @@ export const products = [
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
-    {
-        id: 1003,
-        title: "Combo Dúo Perfecto – “Tu día completo en dos sorbos”",
-        description: "Combo ideal para regalo o uso diario. <ul><li>Incluye: Botella de aluminio 600ml con doble pico + Taza de cerámica importada</li><li>Diseños: Personalizables (ej. Aguacates 'Tú me completas')</li></li></ul>",
-        price: 15000,
-        image: "/assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
-        images: [
-            "/assets/promos/combo_botellita+ taza_personalizada/aab98ca2daa6200e5de04716191cd58d.jpg",
-            "/assets/promos/combo_botellita+ taza_personalizada/0f474d80056c104c0d9a96bf27c07094.jpg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
+
     {
         id: 1002,
         title: "Promo 2 Tazas de Cerámica",
         description: "¡Llevate dos tazas personalizadas con tus personajes favoritos! <ul><li>Material: Cerámica importada de alta calidad</li><li>Diseños: Los Padrinos Mágicos y más</li></li></ul>",
-        price: 11500,
+        price: 12500,
         image: "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
         images: [
             "/assets/promos/combo2_tazas/27d054e9386f5f7dd4db6daceade58a8.jpg",
@@ -113,52 +44,13 @@ export const products = [
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
-    {
-        id: 1008,
-        title: "Combo Ritual – “Cada pieza representa un ritual: café, mate, cerveza.”",
-        description: "<ul><li>Incluye: Choop de polímero + Mate de polímero + Taza de cerámica</li><li>Material: Polímero y cerámica importada</li></li></ul>",
-        price: 16000,
-        image: "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14.jpeg",
-        images: [
-            "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14.jpeg",
-            "/assets/promos/combo_ritual/WhatsApp Image 2026-03-10 at 11.01.14 (1).jpeg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1010,
-        title: "Combo Asador – “El kit que nunca falla”",
-        description: "Todo lo necesario para un asado completo. <ul><li>Incluye: Set de asado (tabla y funda) + Choop de polímero + Destapador de polímero</li><li>Material: Madera, polímero</li></li></ul>",
-        price: 16000,
-        image: "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31.jpeg",
-        images: [
-            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31.jpeg",
-            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31 (1).jpeg",
-            "/assets/promos/combo_asador/WhatsApp Image 2026-03-10 at 11.04.31 (2).jpeg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
-    {
-        id: 1009,
-        title: "Combo Versátil – “Para cada momento, tu compañero ideal”",
-        description: "Versatilidad en tus bebidas. <ul><li>Incluye: Taza de cerámica + Choop de polímero</li><li>Material: Cerámica importada y polímero resistente</li></li></ul>",
-        price: 10900,
-        image: "/assets/promos/combo_versatil/1.jpeg",
-        images: [
-            "/assets/promos/combo_versatil/1.jpeg",
-            "/assets/promos/combo_versatil/2.jpeg"
-        ],
-        category: "COMBOS ¡OFERTAS!",
-        isPromo: true
-    },
+
     // Category: Tazas de Cerámica (Requested to be first)
     {
         id: 10,
         title: "Taza de Cerámica Blanca - Diseños Varios",
         description: "Taza de cerámica clásica, excelente calidad y brillo. Diseños de Stitch, Día de la Madre y más personalizables. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 6000,
+        price: 7000,
         image: "/assets/taza_de_ceramica_blanca/taza_stitch.jpg",
         images: [
             "/assets/taza_de_ceramica_blanca/taza_stitch.jpg",
@@ -173,7 +65,7 @@ export const products = [
         id: 1,
         title: "Tazas con Cuchara - Diseños Personalizados",
         description: "Hermosas tazas de cerámica con interior y asa de color. Incluye cuchara haciendo juego. <ul><li>Consultar colores disponibles</li><li>Medidas: 9cm</li><li>Capacidad: 330ml</li></ul>",
-        price: 9000,
+        price: 10000,
         image: "/assets/taza_con_curarita/taza_curarita.png",
         images: [
             "/assets/taza_con_curarita/taza_curarita.png",
@@ -321,7 +213,7 @@ export const products = [
         id: 101,
         title: "Jarro Térmico de Café 450ml",
         description: "Jarro con asa, ideal para la oficina o el auto. <ul><li>Capacidad: 450 mL</li><li>Altura: 24 cm</li><li>Material: Polímero/Plástico</li></li></ul>",
-        price: 7000,
+        price: 7600,
         image: "/assets/jarros-cafe/jarro_cafe_1.jpg",
         images: [
             "/assets/jarros-cafe/jarro_cafe_1.jpg",
