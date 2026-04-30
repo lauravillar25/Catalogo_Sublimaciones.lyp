@@ -337,6 +337,29 @@ export const products = [
         ],
         category: "Llaveros",
         isPromo: true
+    },
+    {
+        id: 140,
+        title: "Pad Mouse Personalizado",
+        description: "Pads de alta calidad, personalizados con el diseño que elijas. <ul><li>Material: Neoprene de excelente calidad</li><li>Consultá por diseños a medida</li></ul>",
+        image: "/assets/pad/481070845_607577152134433_2442269574151187744_n.jpg",
+        images: [
+            "/assets/pad/481070845_607577152134433_2442269574151187744_n.jpg",
+            "/assets/pad/480741525_607156968843118_9050286530400455990_n.jpg",
+            "/assets/pad/481220659_607157218843093_5327783146118639271_n.jpg"
+        ],
+        category: "Pads y Remeras"
+    },
+    {
+        id: 150,
+        title: "Remeras Personalizadas",
+        description: "Remeras para niños y adultos con la imagen que quieras. <ul><li>Consultar talles disponibles</li><li>Impresión full color y duradera</li></ul>",
+        image: "/assets/remeras/480984367_612037205021761_514665722750016070_n.jpg",
+        images: [
+            "/assets/remeras/480984367_612037205021761_514665722750016070_n.jpg",
+            "/assets/remeras/481705900_18088862074603806_6252320569529128889_n.jpg"
+        ],
+        category: "Pads y Remeras"
     }
 ];
 
