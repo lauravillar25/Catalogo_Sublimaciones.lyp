@@ -125,7 +125,7 @@ function App() {
           <a href="https://wa.me/5493794020786" target="_blank" rel="noopener noreferrer" className="category-link">
             <i className="fab fa-whatsapp"></i> WhatsApp
           </a>
-          <a href="https://www.instagram.com/subli_matesyregalos/" target="_blank" rel="noopener noreferrer" className="category-link">
+          <a href="https://www.instagram.com/sublimaciones.lyp/" target="_blank" rel="noopener noreferrer" className="category-link">
             <i className="fab fa-instagram"></i> Instagram
           </a>
         </div>
