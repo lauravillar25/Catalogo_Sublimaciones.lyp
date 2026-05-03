@@ -94,7 +94,7 @@ export const products = [
         id: 30,
         title: "Taza Mágica - Cambia con el Calor",
         description: "¡Sorprende con esta taza! A temperatura ambiente es negra, pero al agregar líquido caliente revela la imagen oculta. Ideal para regalos sorpresa. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 9000,
+        price: 10000,
         image: "/assets/taza_magica/taza_magica_main.png",
         images: [
             "/assets/taza_magica/taza_magica_main.png",
@@ -156,7 +156,7 @@ export const products = [
         id: 80,
         title: "Taza Mágica con Interior de Color",
         description: "<ul><li>Consultar colores disponibles</li><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 9500,
+        price: 10000,
         image: "/assets/taza_magica_color/taza_magica_color.png",
         images: [
             "/assets/taza_magica_color/taza_magica_color.png"
