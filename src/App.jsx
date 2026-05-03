@@ -62,6 +62,19 @@ function App() {
         >
           Personaliza cada producto a tu manera.
         </motion.p>
+        <motion.a
+          href="https://www.instagram.com/sublimaciones.lyp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hero-ig-btn"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <i className="fab fa-instagram"></i> Síguenos en Instagram
+        </motion.a>
       </section>
 
       <nav className={`category-nav ${isNavOpen ? 'is-open' : ''}`}>

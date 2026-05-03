@@ -606,6 +606,36 @@ h3,
   color: var(--primary-color);
 }
 
+/* Instagram Hero Button */
+.hero-ig-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(220, 39, 67, 0.3);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-ig-btn i {
+  font-size: 1.4rem;
+}
+
+.hero-ig-btn:hover {
+  box-shadow: 0 15px 30px rgba(220, 39, 67, 0.5);
+  color: white;
+  transform: translateY(-2px);
+}
+
+
 /* Work Reel Full Width Carousel */
 .work-reel-full-width {
   margin: 60px 0;
@@ -730,18 +760,12 @@ h3,
 
 @media (max-width: 768px) {
   .work-reel-full-width {
-    margin: 40px 0;
+    margin: 40px -1.5rem; /* Margen negativo igual al padding lateral del .container */
     padding: 40px 0;
-    width: 100%;
-    /* En móvil anulamos el 100vw si falla el centrado lateral */
-    left: 0;
-    right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    /* Usamos el ancho del contenedor padre pero con overflow visible para que las flechas se vean? 
-       No, mejor mantener el breakout pero con un método más seguro. */
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: auto; /* Ocupa todo el espacio disponible más los márgenes */
+    left: auto;
+    right: auto;
+    transform: none;
   }
 
   .work-reel-title {
