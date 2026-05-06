@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { products, galleryImages } from 'file:///d:/Usuario/Desktop/catalogo%20subli/src/data/products.js';
+import { products, gallerySections } from 'file:///d:/Usuario/Desktop/catalogo%20subli/src/data/products.js';
 
 const publicDir = 'd:\\Usuario\\Desktop\\catalogo subli\\public';
 let missingImages = [];
@@ -20,6 +20,15 @@ products.forEach(p => {
             }
         });
     }
+});
+
+gallerySections.forEach(section => {
+    section.images.forEach(img => {
+        const fullPath = path.join(publicDir, img).replace(/\\/g, '/');
+        if (!fs.existsSync(fullPath)) {
+            missingImages.push({ section: section.title, type: 'gallery_section', path: img });
+        }
+    });
 });
 
 console.log(JSON.stringify(missingImages, null, 2));

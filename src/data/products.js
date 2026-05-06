@@ -79,7 +79,7 @@ export const products = [
         id: 20,
         title: "Tazas Interior Color - Personajes",
         description: "Tazas de cerámica con asa e interior de color. Diseños de Mario Bros, Chicas Superpoderosas, Disney y más. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 8000,
+        price: 9000,
         image: "/assets/taza_interior_color/tazas_colores_grupo.png",
         images: [
             "/assets/taza_interior_color/tazas_colores_grupo.png",
@@ -118,22 +118,12 @@ export const products = [
         ],
         category: "Tazas de Cerámica"
     },
-    {
-        id: 50,
-        title: "Taza Pastel Mate",
-        description: "Elegancia y suavidad. Tazas con acabado mate en hermosos tonos pastel (Rosa, Lila, Verde, Celeste). Tacto suave y diseño moderno. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 8600,
-        image: "/assets/taza_pastel_mate/taza_pastel.png",
-        images: [
-            "/assets/taza_pastel_mate/taza_pastel.png"
-        ],
-        category: "Tazas de Cerámica"
-    },
+
     {
         id: 60,
         title: "Taza Ventana Negra",
         description: "<ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
-        price: 8000,
+        price: 9000,
         image: "/assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
         images: [
             "/assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
@@ -145,7 +135,7 @@ export const products = [
         id: 70,
         title: "Taza Base Hilo - Interior y Asa Color",
         description: "Hermosa taza con base texturizada. <ul><li>Consultar colores disponibles</li><li>Medidas: 10cm</li></ul>",
-        price: 9000,
+        price: 10000,
         image: "/assets/taza_base_hilo/taza_base_hilo.png",
         images: [
             "/assets/taza_base_hilo/taza_base_hilo.png"
@@ -167,7 +157,7 @@ export const products = [
         id: 90,
         title: "Hoppy Deportivo Personalizado",
         description: "Ideal para el colegio o deporte, personalizables con nombre y personaje favorito. <ul><li>Modelo: Hoppy Deportivo</li><li>Capacidad: 500 ml</li><li>Material: Polímero Sublimable</li><li>Mantiene: Frío 6hs / Caliente 2hs</li></ul>",
-        price: 11000,
+        price: 12000,
         image: "/assets/botellitas/hoppy_roblox.jpg",
         images: [
             "/assets/botellitas/hoppy_roblox.jpg",
@@ -180,9 +170,9 @@ export const products = [
     },
     {
         id: 91,
-        title: "Hoppy Deportivo 600ml Aluminio",
+        title: "Hoppy Deportivo 700ml Aluminio",
         description: "Botella de aluminio de alta calidad, incluye doble pico para mayor comodidad. <ul><li>Modelo: Hoppy Aluminio Blanco</li><li>Capacidad: 600 ml</li><li>Material: Aluminio Sublimable</li><li>Incluye: Doble pico</li></ul>",
-        price: 12000,
+        price: 15000,
         image: "/assets/botellitas/hoppy_alu_1.jpg",
         images: [
             "/assets/botellitas/hoppy_alu_1.jpg",
