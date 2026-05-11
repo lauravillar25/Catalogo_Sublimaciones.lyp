@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { products, gallerySections, whatsappNumber } from './data/products';
+import { usePrices } from './hooks/usePrices';
 import ProductCard from './components/ProductCard';
 import WorkReel from './components/WorkReel';
 import ImageModal from './components/ImageModal';
@@ -12,9 +13,11 @@ function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  // Group products by category
-  const categories = products.reduce((acc, product) => {
+  // Obtener precios desde Google Sheets (con fallback a products.js)
+  const { pricedProducts, loading } = usePrices(products);
 
+  // Group products by category
+  const categories = pricedProducts.reduce((acc, product) => {
     if (!acc[product.category]) acc[product.category] = [];
     acc[product.category].push(product);
     return acc;
