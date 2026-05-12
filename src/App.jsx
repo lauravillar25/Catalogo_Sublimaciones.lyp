@@ -98,39 +98,46 @@ function App() {
       </nav>
 
       <main className="container">
-        {categoryList.map(categoryName => {
-          const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-');
-          const isPromo = categoryName === "COMBOS ¡OFERTAS!";
+        {loading ? (
+          <div className="loading-container">
+            <div className="spinner"></div>
+            <p>Sincronizando precios...</p>
+          </div>
+        ) : (
+          categoryList.map(categoryName => {
+            const categoryId = categoryName.toLowerCase().replace(/\s+/g, '-');
+            const isPromo = categoryName === "COMBOS ¡OFERTAS!";
 
-          return (
-            <React.Fragment key={categoryName}>
-              {/* Inject Gallery BEFORE "Polímeros Varios" */}
-              {categoryName === "Polímeros Varios" && (
-                <section className="gallery-sections-container" style={{ margin: "2rem 0" }}>
-                  {gallerySections.map((section, sectionIdx) => (
-                    <WorkReel 
-                      key={sectionIdx} 
-                      title={section.title} 
-                      images={section.images} 
-                      hideIcon={sectionIdx > 0}
-                      onImageClick={(img) => setSelectedProduct({ image: img, title: 'Galería', isGallery: true })} 
-                    />
+            return (
+              <React.Fragment key={categoryName}>
+                {/* Inject Gallery BEFORE "Polímeros Varios" */}
+                {categoryName === "Polímeros Varios" && (
+                  <section className="gallery-sections-container" style={{ margin: "2rem 0" }}>
+                    {gallerySections.map((section, sectionIdx) => (
+                      <WorkReel 
+                        key={sectionIdx} 
+                        title={section.title} 
+                        images={section.images} 
+                        hideIcon={sectionIdx > 0}
+                        onImageClick={(img) => setSelectedProduct({ image: img, title: 'Galería', isGallery: true })} 
+                      />
+                    ))}
+                  </section>
+                )}
+
+                <div id={categoryId} className={`category-header ${isPromo ? 'promo-header' : ''}`}>
+                  <h2>{categoryName}</h2>
+                </div>
+
+                <div className="product-grid">
+                  {categories[categoryName].map(product => (
+                    <ProductCard key={product.id} product={product} onProductClick={setSelectedProduct} />
                   ))}
-                </section>
-              )}
-
-              <div id={categoryId} className={`category-header ${isPromo ? 'promo-header' : ''}`}>
-                <h2>{categoryName}</h2>
-              </div>
-
-              <div className="product-grid">
-                {categories[categoryName].map(product => (
-                  <ProductCard key={product.id} product={product} onProductClick={setSelectedProduct} />
-                ))}
-              </div>
-            </React.Fragment>
-          );
-        })}
+                </div>
+              </React.Fragment>
+            );
+          })
+        )}
       </main>
 
       <footer className="footer">

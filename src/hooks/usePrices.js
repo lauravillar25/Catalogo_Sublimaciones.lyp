@@ -8,20 +8,28 @@ import { useState, useEffect } from 'react';
  * Si falla, usa los precios del archivo products.js como respaldo.
  */
 export function usePrices(products) {
-    const [pricedProducts, setPricedProducts] = useState(products);
+    // Inicializamos con un array vacío para evitar el flash de precios viejos
+    const [pricedProducts, setPricedProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         if (!SHEETS_API_URL) {
-            // Si no hay URL configurada, usamos los precios del archivo
+            // Si no hay URL configurada, usamos los precios del archivo como fallback
+            setPricedProducts(products);
             setLoading(false);
             return;
         }
 
         const fetchPrices = async () => {
             try {
-                const response = await fetch(SHEETS_API_URL);
+                // Zero-Cache Strategy: cache: 'no-store' y parámetro dinámico de tiempo
+                const urlWithCacheBuster = `${SHEETS_API_URL}${SHEETS_API_URL.includes('?') ? '&' : '?' }t=${Date.now()}`;
+                
+                const response = await fetch(urlWithCacheBuster, {
+                    cache: 'no-store'
+                });
+
                 if (!response.ok) throw new Error('No se pudo conectar con Google Sheets');
 
                 const prices = await response.json();
@@ -39,7 +47,7 @@ export function usePrices(products) {
             } catch (err) {
                 console.warn('No se pudieron cargar precios desde Google Sheets, usando precios locales.', err);
                 setError(err.message);
-                // Fallback: mantiene los precios del archivo
+                // Fallback: mantiene los precios del archivo solo si falla la red
                 setPricedProducts(products);
             } finally {
                 setLoading(false);
@@ -47,7 +55,7 @@ export function usePrices(products) {
         };
 
         fetchPrices();
-    }, []);
+    }, [products]);
 
     return { pricedProducts, loading, error };
 }
