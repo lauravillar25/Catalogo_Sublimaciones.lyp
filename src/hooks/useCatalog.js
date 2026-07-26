@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { products as fallbackProducts } from '../data/products';
-import { convertDriveLink } from '../utils/driveUtils';
+// Import local fallback products
 
 // URL de exportación a CSV de la planilla
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/1pog9laSsjVA7h2IVDRw1gf7T2gJf_kRuvjbqdCMqzOI/export?format=csv&gid=0';
@@ -97,7 +97,7 @@ export function useCatalog() {
                         id: id,
                         title: name,
                         price: price,
-                        image: convertDriveLink(imageUrl),
+                        image: `/products/${id}.jpg`,
                         category: categoryCol || getCategoryFromId(id),
                         description: `Producto personalizado disponible en catálogo.`
                     });

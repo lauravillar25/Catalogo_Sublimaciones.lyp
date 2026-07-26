@@ -62,7 +62,7 @@ const ProductCard = ({ product, onProductClick }) => {
                     onLoad={() => setImgLoading(false)}
                     onError={(e) => {
                         e.target.onerror = null;
-                        e.target.src = defaultImage;
+                        e.target.src = '/products/default.jpg';
                         setImgLoading(false);
                     }}
                 />
