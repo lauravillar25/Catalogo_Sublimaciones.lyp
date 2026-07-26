@@ -93,13 +93,18 @@ export function useCatalog() {
                     const cleanPrice = priceRaw.replace(/[^0-9.]/g, '');
                     const price = cleanPrice ? Number(cleanPrice) : 0;
 
+                    // Buscar el producto local para heredar imágenes y descripción
+                    const localProduct = fallbackProducts.find(p => String(p.id) === String(id));
+
                     parsedProducts.push({
                         id: id,
                         title: name,
                         price: price,
-                        image: `/products/${id}.jpg`,
+                        image: localProduct?.image || `./assets/logo.png`,
+                        images: localProduct?.images || [],
                         category: categoryCol || getCategoryFromId(id),
-                        description: `Producto personalizado disponible en catálogo.`
+                        description: localProduct?.description || `Producto personalizado disponible en catálogo.`,
+                        isPromo: localProduct?.isPromo || false
                     });
                 }
 
