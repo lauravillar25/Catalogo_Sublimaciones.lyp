@@ -24,7 +24,8 @@ export const products = [
         image: "./assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg",
         images: [
             "./assets/promos/combo2_tazas/73b7043d6b423694edc2f3faaff383c2.jpg",
-            "./assets/promos/combo2_tazas/WhatsApp Image 2026-03-09 at 21.46.27 (1).jpeg"
+            "./assets/promos/combo2_tazas/WhatsApp Image 2026-03-09 at 21.46.27 (1).jpeg",
+            "./assets/promos/combo2_tazas/taza_paredes.jfif"
         ],
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
@@ -44,6 +45,24 @@ export const products = [
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
+    {
+        id: 1008,
+        title: "Placa de Aluminio Sublimada",
+        description: "Placa de aluminio sublimada personalizada con excelente acabado brillante y alta resolución. Ideal para homenajes, reconocimientos, señalización y recuerdos inolvidables. <ul><li>Material: Aluminio sublimable premium</li><li>Resistente y liviana</li></ul>",
+        price: 8500,
+        image: "./assets/promos/Placa de aluminio/placa1.jfif",
+        images: [
+            "./assets/promos/Placa de aluminio/placa1.jfif",
+            "./assets/promos/Placa de aluminio/placa2.jfif",
+            "./assets/promos/Placa de aluminio/placa3.jpeg",
+            "./assets/promos/Placa de aluminio/placa4.jpeg",
+            "./assets/promos/Placa de aluminio/placa5.jpeg",
+            "./assets/promos/Placa de aluminio/placa6.jpeg",
+            "./assets/promos/Placa de aluminio/placa7.jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
 
     // Category: Tazas de Cerámica (Requested to be first)
     {
@@ -57,7 +76,8 @@ export const products = [
             "./assets/taza_de_ceramica_blanca/taza_stitch_carga.jpg",
             "./assets/taza_de_ceramica_blanca/taza_mama_1.jpg",
             "./assets/taza_de_ceramica_blanca/taza_mama_2.jpg",
-            "./assets/taza_de_ceramica_blanca/taza_mama_3.jpg"
+            "./assets/taza_de_ceramica_blanca/taza_123.jfif",
+            "./assets/taza_de_ceramica_blanca/taza_regalo.jpeg"
         ],
         category: "Tazas de Cerámica"
     },
@@ -101,7 +121,10 @@ export const products = [
             "./assets/taza_magica/taza_magica_caliente.jpg",
             "./assets/taza_magica/taza_magica_frio.jpg",
             "./assets/taza_magica/taza_magica_up.jpg",
-            "./assets/taza_magica/taza_magica_simpsons.jpg"
+            "./assets/taza_magica/taza_magica_simpsons.jpg",
+            "./assets/taza_magica/taza_magica.jfif",
+            "./assets/taza_magica/taza_magica_colapinto.jfif",
+            "./assets/taza_magica/taza_magica_colapinto.jpeg"
         ],
         category: "Tazas de Cerámica"
     },
