@@ -316,8 +316,7 @@ export const products = [
             "./assets/llaveros/llavero_cinta_2.jpg",
             "./assets/llaveros/llavero_cinta_3.jpg"
         ],
-        category: "Llaveros",
-        isPromo: true
+        category: "Llaveros"
     },
     {
         id: 131,
@@ -331,8 +330,7 @@ export const products = [
             "./assets/llaveros/llavero_destapador_3.jpg",
             "./assets/llaveros/llavero_destapador_4.jpg"
         ],
-        category: "Llaveros",
-        isPromo: true
+        category: "Llaveros"
     },
     {
         id: 132,
@@ -347,8 +345,7 @@ export const products = [
             "./assets/llaveros/llavero_polimero_corazon_1.jpg",
             "./assets/llaveros/llavero_polimero_corazon_2.jpg"
         ],
-        category: "Llaveros",
-        isPromo: true
+        category: "Llaveros"
     },
     {
         id: 140,

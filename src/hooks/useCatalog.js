@@ -56,6 +56,7 @@ export function useCatalog() {
 
                 const lines = text.split(/\r?\n/);
                 const parsedProducts = [];
+                const seenIds = new Set();
 
                 for (let i = 1; i < lines.length; i++) {
                     const line = lines[i].trim();
@@ -93,18 +94,33 @@ export function useCatalog() {
                     const cleanPrice = priceRaw.replace(/[^0-9.]/g, '');
                     const price = cleanPrice ? Number(cleanPrice) : 0;
 
-                    // Buscar el producto local para heredar imágenes y descripción
-                    const localProduct = fallbackProducts.find(p => String(p.id) === String(id));
+                    // Buscar el producto local por ID O por Coincidencia de Nombre para heredar imágenes, descripción y categoría
+                    let localProduct = fallbackProducts.find(p => id && String(p.id) === String(id));
+                    if (!localProduct && name) {
+                        const cleanName = name.toLowerCase().trim();
+                        localProduct = fallbackProducts.find(p => 
+                            p.title.toLowerCase().trim().includes(cleanName) || 
+                            cleanName.includes(p.title.toLowerCase().trim())
+                        );
+                    }
+
+                    const finalId = id || (localProduct ? String(localProduct.id) : `custom-${i}`);
+
+                    // Evitar productos duplicados en el catálogo (ej. Mate de Polímero doble en CSV)
+                    if (seenIds.has(finalId)) continue;
+                    seenIds.add(finalId);
+
+                    const finalCategory = categoryCol || (localProduct ? localProduct.category : getCategoryFromId(finalId));
 
                     parsedProducts.push({
-                        id: id,
-                        title: name,
-                        price: price,
+                        id: finalId,
+                        title: localProduct?.title || name,
+                        price: price || localProduct?.price || 0,
                         image: localProduct?.image || `./assets/logo.png`,
                         images: localProduct?.images || [],
-                        category: categoryCol || getCategoryFromId(id),
+                        category: finalCategory,
                         description: localProduct?.description || `Producto personalizado disponible en catálogo.`,
-                        isPromo: localProduct?.isPromo || false
+                        isPromo: localProduct?.isPromo || (finalCategory === "COMBOS ¡OFERTAS!")
                     });
                 }
 
