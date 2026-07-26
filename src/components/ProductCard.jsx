@@ -26,7 +26,7 @@ const ProductCard = ({ product, onProductClick }) => {
         setImgIdx((prev) => (prev - 1 + product.images.length) % product.images.length);
     };
 
-    const waMessage = `Hola, me interesa el producto "${product.title}" que vi en su catálogo.`;
+    const waMessage = `Hola! Quiero pedir el producto: "${product.title}" (Ref/ID: ${product.id || 'N/A'}).`;
     const waLink = `https://wa.me/5493794020786?text=${encodeURIComponent(waMessage)}`;
 
     const formatPrice = (price) => {
@@ -87,7 +87,7 @@ const ProductCard = ({ product, onProductClick }) => {
                 <h3 className="title">{product.title || 'Producto'}</h3>
                 <div className="price">{formatPrice(product.price)}</div>
                 <button className="btn-consultar" onClick={(e) => { e.stopPropagation(); window.open(waLink, '_blank'); }}>
-                    Consultar <i className="fab fa-whatsapp"></i>
+                    Pedir por WhatsApp <i className="fab fa-whatsapp"></i>
                 </button>
             </div>
         </motion.div>
