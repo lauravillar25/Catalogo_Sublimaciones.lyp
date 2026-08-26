@@ -63,6 +63,19 @@ export const products = [
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
+    {
+        id: 1009,
+        title: "Gorras Sublimadas Personalizadas",
+        description: "Gorras trucker sublimadas con el diseño que quieras. Ideales para eventos, egresados, recuerdos religiosos y más. <ul><li>Modelo: Trucker (frente blanco + red negra)</li><li>Material: Poliéster sublimable + red de nylon</li><li>Personalización: Full color, nombre y diseño a elección</li><li><b>¡Por mayor: $6.500 la unidad!</b></li></ul>",
+        price: 8000,
+        image: "./assets/promos/gorras/gorras_1 (1).jpeg",
+        images: [
+            "./assets/promos/gorras/gorras_1 (1).jpeg",
+            "./assets/promos/gorras/gorras_2.jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
 
     // Category: Tazas de Cerámica (Requested to be first)
     {
@@ -145,12 +158,25 @@ export const products = [
     {
         id: 60,
         title: "Taza Ventana Negra",
-        description: "<ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
+        description: "Taza de cerámica negra con ventana sublimable, ideal para diseños que resaltan sobre fondo oscuro. <ul><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li></ul>",
         price: 9000,
         image: "./assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
         images: [
             "./assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
-            "./assets/taza_ventana_negra/taza_ventana_negra_2.png"
+            "./assets/taza_ventana_negra/taza_ventana_negra_2.png",
+            "./assets/taza_ventana_negra/taza_vetana_negra_3.jpeg"
+        ],
+        category: "Tazas de Cerámica"
+    },
+    {
+        id: 65,
+        title: "Taza Boquita - Diseño Interior",
+        description: "Divertida taza de cerámica con diseño en DTF UV en el interior de la boca. ¡Sorprendé con cada sorbo! Ideal para regalar. <ul><li>Material: Cerámica importada</li><li>Boca: Impresión en DTF UV</li><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li><li>⏳ Pedido con 5 días de antelación</li></ul>",
+        price: 10000,
+        image: "./assets/taza_boquita/taza_boquita_1.jpeg",
+        images: [
+            "./assets/taza_boquita/taza_boquita_1.jpeg",
+            "./assets/taza_boquita/taza_boquita_2.jpeg"
         ],
         category: "Tazas de Cerámica"
     },

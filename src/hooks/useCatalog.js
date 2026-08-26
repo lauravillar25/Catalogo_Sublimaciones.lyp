@@ -80,15 +80,21 @@ export function useCatalog() {
                     }
                     row.push(currentValue);
 
-                    // Columna A (ID), Columna B (Precio), Columna C (Nombre), Columna D (Imagen/Drive)
+                    // Columna A (ID), Columna B (Precio), Columna C (Nombre), Columna D (Imagen/Drive), Columna E (Categoría), Columna F (Stock)
                     const id = row[0] ? row[0].replace(/^"|"$/g, '').trim() : '';
                     const priceRaw = row[1] ? row[1].replace(/^"|"$/g, '').trim() : '';
                     const name = row[2] ? row[2].replace(/^"|"$/g, '').trim() : '';
                     const imageUrl = row[3] ? row[3].replace(/^"|"$/g, '').trim() : '';
                     const categoryCol = row[4] ? row[4].replace(/^"|"$/g, '').trim() : '';
+                    const stockCol = row[5] ? row[5].replace(/^"|"$/g, '').trim().toLowerCase() : '';
 
                     // Limpieza: Ignorar si no tiene nombre
                     if (!name) continue;
+
+                    // Determinar si el producto está sin stock
+                    // Si la columna F dice "no", "sin stock", "agotado", "0" → sin stock
+                    const outOfStockValues = ['no', 'sin stock', 'agotado', '0', 'false'];
+                    const isOutOfStock = stockCol ? outOfStockValues.includes(stockCol) : false;
 
                     // Formatear precio
                     const cleanPrice = priceRaw.replace(/[^0-9.]/g, '');
@@ -120,7 +126,8 @@ export function useCatalog() {
                         images: localProduct?.images || [],
                         category: finalCategory,
                         description: localProduct?.description || `Producto personalizado disponible en catálogo.`,
-                        isPromo: localProduct?.isPromo || (finalCategory === "COMBOS ¡OFERTAS!")
+                        isPromo: localProduct?.isPromo || (finalCategory === "COMBOS ¡OFERTAS!"),
+                        outOfStock: isOutOfStock
                     });
                 }
 

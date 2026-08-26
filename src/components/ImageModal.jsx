@@ -113,6 +113,11 @@ const ImageModal = ({ isOpen, product, onClose }) => {
 
                             <div className="modal-details">
                                 <h2 className="modal-title">{product.title}</h2>
+                                {product.outOfStock && (
+                                    <div className="modal-out-of-stock-badge">
+                                        <i className="fas fa-times-circle"></i> PRODUCTO SIN STOCK TEMPORALMENTE
+                                    </div>
+                                )}
                                 {product.description && (
                                     <div
                                         className="modal-description"
@@ -122,9 +127,15 @@ const ImageModal = ({ isOpen, product, onClose }) => {
                                 {!product.isGallery && (
                                     <div className="modal-price">{formatPrice(product.price)}</div>
                                 )}
-                                <a href={waLink} target="_blank" rel="noopener noreferrer" className="modal-cta-btn">
-                                    Consultar por WhatsApp <MessageCircle size={20} />
-                                </a>
+                                {product.outOfStock ? (
+                                    <a href={waLink} target="_blank" rel="noopener noreferrer" className="modal-cta-btn modal-cta-sin-stock">
+                                        Consultar disponibilidad <MessageCircle size={20} />
+                                    </a>
+                                ) : (
+                                    <a href={waLink} target="_blank" rel="noopener noreferrer" className="modal-cta-btn">
+                                        Consultar por WhatsApp <MessageCircle size={20} />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </motion.div>

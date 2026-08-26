@@ -39,7 +39,7 @@ const ProductCard = ({ product, onProductClick }) => {
 
     return (
         <motion.div
-            className={`product-card ${product.isPromo ? 'is-promo' : ''}`}
+            className={`product-card ${product.isPromo ? 'is-promo' : ''} ${product.outOfStock ? 'is-out-of-stock' : ''}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -47,7 +47,12 @@ const ProductCard = ({ product, onProductClick }) => {
             onClick={() => onProductClick(product)}
             style={{ cursor: 'pointer' }}
         >
-            {product.isPromo && (
+            {product.outOfStock && (
+                <div className="out-of-stock-badge">
+                    <i className="fas fa-times-circle"></i> SIN STOCK
+                </div>
+            )}
+            {product.isPromo && !product.outOfStock && (
                 <div className="promo-badge">
                     <i className="fas fa-tag"></i> PROMO
                 </div>
@@ -86,9 +91,15 @@ const ProductCard = ({ product, onProductClick }) => {
             <div className="card-content">
                 <h3 className="title">{product.title || 'Producto'}</h3>
                 <div className="price">{formatPrice(product.price)}</div>
-                <button className="btn-consultar" onClick={(e) => { e.stopPropagation(); window.open(waLink, '_blank'); }}>
-                    Pedir por WhatsApp <i className="fab fa-whatsapp"></i>
-                </button>
+                {product.outOfStock ? (
+                    <button className="btn-consultar btn-sin-stock" onClick={(e) => { e.stopPropagation(); window.open(waLink, '_blank'); }}>
+                        Consultar disponibilidad <i className="fab fa-whatsapp"></i>
+                    </button>
+                ) : (
+                    <button className="btn-consultar" onClick={(e) => { e.stopPropagation(); window.open(waLink, '_blank'); }}>
+                        Pedir por WhatsApp <i className="fab fa-whatsapp"></i>
+                    </button>
+                )}
             </div>
         </motion.div>
     );
