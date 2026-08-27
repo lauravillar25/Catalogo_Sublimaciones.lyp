@@ -76,8 +76,49 @@ export const products = [
         category: "COMBOS ¡OFERTAS!",
         isPromo: true
     },
+    {
+        id: 1010,
+        title: "Combo 4 - Taza con boquita, caja y posa taza",
+        description: "Increíble combo de taza con boquita, caja de presentación y posa taza de madera. <ul><li>Incluye: Taza de cerámica con interior impreso, caja y posa taza</li><li>Material: Cerámica y madera</li></ul>",
+        price: 13000,
+        image: "./assets/promos/combo_4/taza_boquita1.jpeg",
+        images: [
+            "./assets/promos/combo_4/taza_boquita1.jpeg",
+            "./assets/promos/combo_4/taza_boquita2.jpeg",
+            "./assets/promos/combo_4/taza_boquita3.jpeg",
+            "./assets/promos/combo_4/taza_boquita4.jpeg",
+            "./assets/promos/combo_4/taza_boquita5.jpeg",
+            "./assets/promos/combo_4/taza_boquita6.jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
+    {
+        id: 1011,
+        title: "Combo Infantil – Taza de Polímero + Botella de Polímero",
+        description: "El combo perfecto para los más chicos. <ul><li>Incluye: Taza de polímero personalizada + Botella de polímero</li><li>Material: Polímero sublimable</li><li>Diseños personalizables a elección: personajes, nombres, colores</li></ul>",
+        price: 0,
+        image: "./assets/promos/combo_3/combo_3.jpeg",
+        images: [
+            "./assets/promos/combo_3/combo_3.jpeg"
+        ],
+        category: "COMBOS ¡OFERTAS!",
+        isPromo: true
+    },
 
     // Category: Tazas de Cerámica (Requested to be first)
+    {
+        id: 65,
+        title: "Taza Boquita - Diseño Interior",
+        description: "Divertida taza de cerámica con diseño en DTF UV en el interior de la boca. ¡Sorprendé con cada sorbo! Ideal para regalar. <ul><li>Material: Cerámica importada</li><li>Boca: Impresión en DTF UV</li><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li><li>⏳ Pedido con 5 días de antelación</li></ul>",
+        price: 10000,
+        image: "./assets/taza_boquita/taza_boquita_1.jpeg",
+        images: [
+            "./assets/taza_boquita/taza_boquita_1.jpeg",
+            "./assets/taza_boquita/taza_boquita_2.jpeg"
+        ],
+        category: "Tazas de Cerámica"
+    },
     {
         id: 10,
         title: "Taza de Cerámica Blanca - Diseños Varios",
@@ -165,18 +206,6 @@ export const products = [
             "./assets/taza_ventana_negra/taza_ventana_negra_1.jpg",
             "./assets/taza_ventana_negra/taza_ventana_negra_2.png",
             "./assets/taza_ventana_negra/taza_vetana_negra_3.jpeg"
-        ],
-        category: "Tazas de Cerámica"
-    },
-    {
-        id: 65,
-        title: "Taza Boquita - Diseño Interior",
-        description: "Divertida taza de cerámica con diseño en DTF UV en el interior de la boca. ¡Sorprendé con cada sorbo! Ideal para regalar. <ul><li>Material: Cerámica importada</li><li>Boca: Impresión en DTF UV</li><li>Medidas: 9.5cm</li><li>Capacidad: 350ml</li><li>⏳ Pedido con 5 días de antelación</li></ul>",
-        price: 10000,
-        image: "./assets/taza_boquita/taza_boquita_1.jpeg",
-        images: [
-            "./assets/taza_boquita/taza_boquita_1.jpeg",
-            "./assets/taza_boquita/taza_boquita_2.jpeg"
         ],
         category: "Tazas de Cerámica"
     },

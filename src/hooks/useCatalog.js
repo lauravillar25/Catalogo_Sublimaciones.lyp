@@ -131,6 +131,25 @@ export function useCatalog() {
                     });
                 }
 
+                // Agregar productos locales que no están en el CSV (ej: nuevos productos, gorras, combo_4)
+                fallbackProducts.forEach(localProduct => {
+                    const localIdStr = String(localProduct.id);
+                    if (!seenIds.has(localIdStr)) {
+                        parsedProducts.push({
+                            id: localIdStr,
+                            title: localProduct.title,
+                            price: localProduct.price || 0,
+                            image: localProduct.image || './assets/logo.png',
+                            images: localProduct.images || [],
+                            category: localProduct.category,
+                            description: localProduct.description || 'Producto personalizado disponible en catálogo.',
+                            isPromo: localProduct.isPromo || false,
+                            outOfStock: false
+                        });
+                        seenIds.add(localIdStr);
+                    }
+                });
+
                 if (parsedProducts.length === 0) {
                     throw new Error('El archivo CSV no contiene registros válidos.');
                 }
