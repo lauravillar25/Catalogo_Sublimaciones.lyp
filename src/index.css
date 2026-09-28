@@ -1449,3 +1449,405 @@ h3,
     transform: rotate(360deg);
   }
 }
+
+/* =========================================
+   SECCIÓN DÍA DE LA MADRE
+   ========================================= */
+.md-section {
+  max-width: 1200px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+.md-header {
+  position: relative;
+  background: linear-gradient(135deg, #fff0f6 0%, #fce7f3 40%, #ede9fe 100%);
+  border-radius: 28px;
+  border: 1.5px solid #f9a8d4;
+  padding: 50px 30px 40px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(190, 24, 93, 0.08);
+}
+
+/* Pétalos flotantes */
+.md-petals {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  justify-content: space-around;
+  pointer-events: none;
+}
+
+.md-petal {
+  font-size: 1.8rem;
+  animation: md-float 4s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+  opacity: 0.55;
+  display: inline-block;
+}
+
+@keyframes md-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-14px) rotate(8deg); }
+}
+
+.md-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.md-eyebrow {
+  display: inline-block;
+  background: linear-gradient(90deg, #be185d, #7c3aed);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.md-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-weight: 900;
+  background: linear-gradient(90deg, #be185d, #7c3aed, #db2777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.md-subtitle {
+  font-size: 1.05rem;
+  color: #6b21a8;
+  max-width: 520px;
+  margin: 0 auto 24px;
+  line-height: 1.6;
+}
+
+/* Countdown */
+.md-countdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.md-countdown-label-top {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #be185d;
+  opacity: 0.85;
+}
+
+.md-countdown {
+  display: flex;
+  gap: 12px;
+}
+
+.md-countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid #f9a8d4;
+  border-radius: 14px;
+  padding: 10px 16px;
+  min-width: 62px;
+  box-shadow: 0 4px 12px rgba(190, 24, 93, 0.1);
+}
+
+.md-countdown-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #be185d;
+  line-height: 1;
+}
+
+.md-countdown-lbl {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9d174d;
+  margin-top: 2px;
+}
+
+/* Grilla de promos */
+.md-promos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 1.5rem;
+}
+
+/* Tarjeta de promo */
+.md-promo-card {
+  position: relative;
+  border-radius: 22px;
+  border: 1.5px solid;
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.md-promo-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 11px;
+  border-radius: 50px;
+}
+
+/* Contenedor imagen/ícono */
+.md-promo-img-wrap {
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 6px;
+  background: rgba(255,255,255,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.md-promo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.md-promo-card:hover .md-promo-img {
+  transform: scale(1.05);
+}
+
+.md-promo-icon-fallback {
+  font-size: 4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: md-float 3s ease-in-out infinite;
+}
+
+
+.md-promo-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.md-promo-desc {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Lista de productos incluidos */
+.md-promo-includes {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  background: rgba(255,255,255,0.55);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin: 2px 0;
+}
+
+.md-promo-includes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.md-include-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Dots del carrusel de imágenes */
+.md-img-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 2;
+}
+
+.md-img-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.md-img-dot.active {
+  background: #ffffff;
+  transform: scale(1.3);
+}
+
+.md-promo-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.md-promo-price--consult {
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.85;
+  letter-spacing: 0;
+}
+
+
+.md-promo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: filter 0.2s ease, transform 0.2s ease;
+  margin-top: 4px;
+}
+
+.md-promo-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.md-promo-btn i {
+  font-size: 1.1rem;
+}
+
+/* Nota al pie */
+.md-footer-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7c3aed;
+  background: rgba(237, 233, 254, 0.6);
+  border: 1px solid #c4b5fd;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-weight: 500;
+}
+
+.md-footer-note i {
+  color: #be185d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .md-header {
+    padding: 36px 20px 30px;
+    border-radius: 20px;
+  }
+
+  .md-title {
+    font-size: 2rem;
+  }
+
+  .md-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .md-countdown {
+    gap: 8px;
+  }
+
+  .md-countdown-block {
+    min-width: 52px;
+    padding: 8px 12px;
+  }
+
+  .md-countdown-num {
+    font-size: 1.4rem;
+  }
+
+  .md-promos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .md-promo-card {
+    padding: 26px 20px 20px;
+    gap: 12px;
+  }
+
+  .md-promo-img-wrap {
+    height: 180px;
+  }
+
+
+  .md-promo-icon-fallback {
+    font-size: 2.8rem;
+  }
+
+
+  .md-promo-title {
+    font-size: 1.05rem;
+  }
+
+  .md-promo-price {
+    font-size: 1.25rem;
+  }
+
+  .md-promo-desc {
+    font-size: 0.8rem;
+  }
+
+  .md-section {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+}

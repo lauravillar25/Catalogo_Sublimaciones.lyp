@@ -7,6 +7,7 @@ import WorkReel from './components/WorkReel';
 import ImageModal from './components/ImageModal';
 import Noise from './components/Noise';
 import WhatsAppBubble from './components/WhatsAppBubble';
+import MothersDay from './components/MothersDay';
 import './index.css';
 
 function App() {
@@ -75,6 +76,9 @@ function App() {
           <i className="fab fa-instagram"></i> Síguenos en Instagram
         </motion.a>
       </section>
+
+      {/* Sección especial Día de la Madre (octubre 2026) */}
+      <MothersDay whatsappNumber={whatsappNumber} />
 
       {/* Buscador en tiempo real */}
       <div className="search-section-container" id="search-section">
